@@ -20,7 +20,10 @@ REF_DOCX="$ROOT/templates/reference.docx"
 mkdir -p "$DIST"
 
 # --- 1. Build the footer with the live URL baked in. -----------------------
+# templates/ may not exist on a fresh checkout (footer.md is gitignored and
+# reference.docx is optional), so make sure the directory is there first.
 
+mkdir -p "$(dirname "$FOOTER")"
 cat > "$FOOTER" <<EOF
 ---
 
