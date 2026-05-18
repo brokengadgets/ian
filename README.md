@@ -20,17 +20,26 @@ resume so you can see what the output looks like before customizing.
 3. Replace the demo content. The places you need to touch:
    - `src/content/resume.md` — your name, contact info, and resume body.
      Delete the demo callout at the top.
-   - `astro.config.mjs` — set `site:` to the URL you'll publish at.
-   - `Makefile` — change the default `SITE_URL ?=` to the same URL (or
-     pass it per build: `make SITE_URL=https://you.example.com`).
    - `src/styles/print.css` — update the `@bottom-center` URL in the
      `@page` block. This is the page footer baked into the PDF.
    - `package.json` — change `"name"` and `"version"` if you want.
    - `README.md` — replace this file with whatever describes your project.
+   - **If you're not deploying via GitHub Pages**, also update
+     `astro.config.mjs` (`site:`) and `Makefile` (`SITE_URL ?=`) to point
+     at your hosting URL. The Pages workflow fills these in automatically
+     from `actions/configure-pages` outputs, so you can leave them
+     untouched if you're using the included workflow.
 4. (Optional) Customize the DOCX look: see `templates/README.md`.
-5. Build: `make` produces `dist/index.html` plus `resume.{pdf,docx,rtf}`.
-6. Deploy `dist/` anywhere static — GitHub Pages, Netlify, Cloudflare
-   Pages, S3, your own server.
+5. Build locally: `make` produces `dist/index.html` plus
+   `resume.{pdf,docx,rtf}`.
+6. Deploy. Two options:
+   - **GitHub Pages** (auto): in your repo, go to **Settings → Pages** and
+     set **Source: GitHub Actions**. Push to `main` and the included
+     workflow (`.github/workflows/deploy.yml`) will build and publish.
+     The workflow feeds the Pages URL into Astro's `site`/`base` and into
+     `SITE_URL`, so it works on any forked repo without further edits.
+   - **Anywhere else**: build with `make SITE_URL=https://your.example.com`
+     and upload `dist/` to Netlify, Cloudflare Pages, S3, etc.
 
 ## Stack
 
