@@ -20,8 +20,6 @@ resume so you can see what the output looks like before customizing.
 3. Replace the demo content. The places you need to touch:
    - `src/content/resume.md` — your name, contact info, and resume body.
      Delete the demo callout at the top.
-   - `src/styles/print.css` — update the `@bottom-center` URL in the
-     `@page` block. This is the page footer baked into the PDF.
    - `package.json` — change `"name"` and `"version"` if you want.
    - `README.md` — replace this file with whatever describes your project.
    - **If you're not deploying via GitHub Pages**, also update
@@ -29,6 +27,10 @@ resume so you can see what the output looks like before customizing.
      at your hosting URL. The Pages workflow fills these in automatically
      from `actions/configure-pages` outputs, so you can leave them
      untouched if you're using the included workflow.
+
+   The PDF page footer and any leftover `https://ada.example.com` strings
+   in the source are automatically rewritten to `$SITE_URL` at build
+   time, so you don't need to edit `src/styles/print.css` by hand.
 4. (Optional) Customize the DOCX look: see `templates/README.md`.
 5. Build locally: `make` produces `dist/index.html` plus
    `resume.{pdf,docx,rtf}`.
@@ -124,9 +126,11 @@ when generating DOCX/RTF. The HTML build ignores it (the canonical URL is
 already where you're reading it). Edit `SITE_URL` in the `Makefile` (or
 pass it on the command line) to change it everywhere at once.
 
-The PDF page footer is separate: it lives in `src/styles/print.css` as
-literal CSS content (so WeasyPrint can render it through `@page`), and
-must be edited there.
+The PDF page footer lives in `src/styles/print.css` as literal CSS
+content (so WeasyPrint can render it through `@page`). The build script
+sed-substitutes the placeholder URL in the built HTML right before
+WeasyPrint reads it, so the PDF footer ends up matching `SITE_URL`
+without any manual edits to `print.css`.
 
 ## Customizing
 
