@@ -81,13 +81,37 @@ tags.
 
 ## Build
 
-```sh
-# one-time
-npm install
-nix develop          # or: pacman -S pandoc python-weasyprint
+### 1. Install Node via nvm
 
-# every build
-make                 # → dist/index.html, dist/resume.pdf, .docx, .rtf
+[nvm](https://github.com/nvm-sh/nvm) is a per-user Node version manager —
+no `sudo`, no fights with the system package set, easy to upgrade. Follow
+the upstream install instructions at
+<https://github.com/nvm-sh/nvm#installing-and-updating> (one curl command),
+then:
+
+```sh
+nvm install 24       # matches the Node version pinned in CI
+nvm use 24
+npm install          # astro and the rest of the JS deps go here
+```
+
+### 2. Install pandoc and weasyprint
+
+These two aren't on npm. On Ubuntu/Debian:
+
+```sh
+sudo apt-get update
+sudo apt-get install -y pandoc weasyprint
+```
+
+Other platforms: `brew install pandoc weasyprint` (macOS),
+`pacman -S pandoc python-weasyprint` (Arch). Any reasonably recent
+version of either tool is fine.
+
+### 3. Build
+
+```sh
+make                 # → dist/index.html + dist/resume.{pdf,docx,rtf}
 make dev             # astro dev server on :4321
 make clean
 ```
