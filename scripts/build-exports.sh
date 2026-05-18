@@ -30,13 +30,34 @@ cat > "$FOOTER" <<EOF
 *View the live, always-current version of this resume at <$SITE_URL>.*
 EOF
 
-# --- 2. Combine resume markdown + footer for non-HTML exports. -------------
+# --- 2. Substitute the placeholder URL in the built HTML. -----------------
+# The demo persona's URL (https://ada.example.com) is hardcoded in a few
+# places that can't be templated cleanly: src/styles/print.css's
+# @bottom-center page footer, and any leftover demo content in resume.md.
+# Replace it in the built HTML so the PDF (which WeasyPrint renders from
+# this HTML) and the published page both show the actual deploy URL.
+
+SITE_DISPLAY="${SITE_URL#https://}"
+SITE_DISPLAY="${SITE_DISPLAY#http://}"
+
+if [[ -f "$DIST/index.html" ]]; then
+  sed -i \
+    -e "s|https://ada\.example\.com|$SITE_URL|g" \
+    -e "s|ada\.example\.com|$SITE_DISPLAY|g" \
+    "$DIST/index.html"
+fi
+
+# --- 3. Combine resume markdown + footer for non-HTML exports. -------------
 
 COMBINED="$(mktemp --suffix=.md)"
 trap 'rm -f "$COMBINED"' EXIT
-cat "$SRC_MD" "$FOOTER" > "$COMBINED"
+sed \
+  -e "s|https://ada\.example\.com|$SITE_URL|g" \
+  -e "s|ada\.example\.com|$SITE_DISPLAY|g" \
+  "$SRC_MD" > "$COMBINED"
+cat "$FOOTER" >> "$COMBINED"
 
-# --- 3. DOCX via Pandoc. ---------------------------------------------------
+# --- 4. DOCX via Pandoc. ---------------------------------------------------
 
 echo "→ Building resume.docx"
 if [[ -f "$REF_DOCX" ]]; then
@@ -55,7 +76,7 @@ else
     -o "$DIST/resume.docx"
 fi
 
-# --- 4. RTF via Pandoc. ----------------------------------------------------
+# --- 5. RTF via Pandoc. ----------------------------------------------------
 
 echo "→ Building resume.rtf"
 pandoc "$COMBINED" \
@@ -65,7 +86,7 @@ pandoc "$COMBINED" \
   --metadata "title=Resume" \
   -o "$DIST/resume.rtf"
 
-# --- 5. PDF via WeasyPrint, from the rendered HTML. ------------------------
+# --- 6. PDF via WeasyPrint, from the rendered HTML. ------------------------
 # Using the actual built HTML means the PDF matches the website exactly.
 # WeasyPrint reads our @page rules in print.css for headers/footers/margins.
 
