@@ -10,7 +10,7 @@
 
 set -euo pipefail
 
-SITE_URL="${SITE_URL:-https://ada.example.com}"
+SITE_URL="${SITE_URL:-https://brokengadgets.github.io/ian/}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DIST="$ROOT/dist"
 SRC_MD="$ROOT/src/content/resume.md"
@@ -31,19 +31,18 @@ cat > "$FOOTER" <<EOF
 EOF
 
 # --- 2. Substitute the placeholder URL in the built HTML. -----------------
-# The demo persona's URL (https://ada.example.com) is hardcoded in a few
-# places that can't be templated cleanly: src/styles/print.css's
-# @bottom-center page footer, and any leftover demo content in resume.md.
-# Replace it in the built HTML so the PDF (which WeasyPrint renders from
-# this HTML) and the published page both show the actual deploy URL.
+# The source URL is hardcoded in a few places that can't be templated
+# cleanly: src/styles/print.css's @bottom-center page footer. Replace it in
+# the built HTML so the PDF (which WeasyPrint renders from this HTML) and the
+# published page both show the actual deploy URL.
 
 SITE_DISPLAY="${SITE_URL#https://}"
 SITE_DISPLAY="${SITE_DISPLAY#http://}"
 
 if [[ -f "$DIST/index.html" ]]; then
   sed -i \
-    -e "s|https://ada\.example\.com|$SITE_URL|g" \
-    -e "s|ada\.example\.com|$SITE_DISPLAY|g" \
+    -e "s|https://brokengadgets\.github\.io/ian/|$SITE_URL|g" \
+    -e "s|brokengadgets\.github\.io/ian|$SITE_DISPLAY|g" \
     "$DIST/index.html"
 fi
 
@@ -52,8 +51,8 @@ fi
 COMBINED="$(mktemp --suffix=.md)"
 trap 'rm -f "$COMBINED"' EXIT
 sed \
-  -e "s|https://ada\.example\.com|$SITE_URL|g" \
-  -e "s|ada\.example\.com|$SITE_DISPLAY|g" \
+  -e "s|https://brokengadgets\.github\.io/ian/|$SITE_URL|g" \
+  -e "s|brokengadgets\.github\.io/ian|$SITE_DISPLAY|g" \
   "$SRC_MD" > "$COMBINED"
 cat "$FOOTER" >> "$COMBINED"
 

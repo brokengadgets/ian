@@ -1,94 +1,153 @@
 ---
-name: "Ada Lovelace"
-title: "Principal Software Engineer"
-email: "ada@example.com"
-phone: "+1 (555) 010-1815"
-location: "London, UK"
-website: "https://ada.example.com"
-github: "adalovelace"
-linkedin: "adalovelace"
+name: "Ian"
+title: "Security Engineer & Platform Builder"
+email: ""
+phone: ""
+location: ""
+website: "https://brokengadgets.github.io/ian/"
+github: ""
+linkedin: ""
 summary: >
-  Systems engineer with 15+ years building distributed infrastructure,
-  developer tooling, and high-throughput data pipelines. Comfortable from
-  kernel-adjacent work up to product-facing APIs. Strong preference for
-  boring technology, sharp interfaces, and code that survives its author.
+  Security engineer and platform builder specializing in cloud security
+  automation, endpoint-security operations, developer tooling, and
+  AI-assisted engineering. Turns complex operational processes into reliable,
+  testable, least-privilege systems with clear interfaces, strong
+  documentation, and practical paths from prototype to production.
 ---
-
-> **You're looking at a demo resume rendered by [starsheet](https://github.com/nulvox/starsheet)** —
-> a GitHub template for single-source Markdown resumes that export to HTML,
-> PDF, DOCX, and RTF. The person below is fictional. To build your own,
-> click **"Use this template"** on the [template repo](https://github.com/nulvox/starsheet)
-> and edit `src/content/resume.md`.
 
 ## Summary
 
-Systems engineer with 15+ years building distributed infrastructure,
-developer tooling, and high-throughput data pipelines. Comfortable from
-kernel-adjacent work up to product-facing APIs. Strong preference for boring
-technology, sharp interfaces, and code that survives its author.
+Security engineer and platform builder with experience delivering practical
+automation across cloud infrastructure, endpoint security, developer tooling,
+and AI-assisted engineering. Strong focus on least privilege, repeatable
+delivery, cross-platform support, clear documentation, and measurable
+validation.
 
-## Experience
+## Selected Experience
 
-### Principal Engineer — **Analytical Engine Co.** {.role}
-*Jan 2021 – Present · London, UK*
+### Shared security and engineering platform
 
-- Led the rewrite of the core scheduling layer from a hand-rolled actor
-  system to a Rust-based work-stealing executor; reduced p99 task latency
-  from 340ms to 28ms across 12k workers.
-- Designed and shipped an internal Wasm plugin runtime that lets product
-  teams deploy customer-specific transforms without redeploying the
-  pipeline. Adopted by 8 of 11 product teams in the first six months.
-- Mentored four senior engineers into staff-level scope; built the
-  engineering ladder rubric the company still uses.
+- Helped evolve a multi-service internal platform into a coordinated service
+  ecosystem spanning authentication, authorization, secrets access, issue
+  tracking, observability, risk evaluation, and AI inference.
+- Established consistent patterns for service templates, infrastructure as
+  code, environment promotion, deployment workflows, and operational
+  documentation.
+- Added secure service-to-service boundaries, managed-identity
+  authentication, policy-based authorization, structured errors, bounded
+  telemetry, and explicit failure behavior.
+- Extended the platform across multiple cloud environments and authenticated
+  integrations with legacy enterprise systems without weakening its security
+  model.
 
-### Staff Engineer — **Babbage Systems** {.role}
-*Mar 2016 – Dec 2020 · Remote*
+### Endpoint-security deployment and operations
 
-- Owned the storage layer for a multi-tenant timeseries database (Go,
-  500TB+ active, 2M writes/sec sustained). Reduced steady-state cost per
-  ingested point by 61% over three years.
-- Built `babctl`, the operational CLI used by every SRE in the company.
-  Open-sourced internally; eventually externalised as the basis for the
-  Babbage Cloud control plane.
-- Drove adoption of property-based testing across the storage org. Caught
-  a class of off-by-one bugs in compaction that had previously shipped
-  three times.
+- Led and supported endpoint-protection migration, onboarding, testing,
+  troubleshooting, and policy work across Linux, Windows, and macOS.
+- Built and maintained installers, deployment utilities, configuration
+  systems, test harnesses, and lab environments for endpoint-security
+  tooling.
+- Added architecture-specific builds, release automation, artifact
+  validation, environment-aware configuration, retry behavior, version
+  reporting, and cleanup workflows.
+- Investigated endpoint performance, policy conflicts, exclusions, onboarding
+  failures, telemetry gaps, and deployment edge cases.
+- Created support documentation, dashboards, cross-training material, and
+  operational processes for distributed teams.
 
-### Senior Engineer — **Punchcard Labs** {.role}
-*Jul 2012 – Feb 2016 · Cambridge, UK*
+### AI-agent security and engineering workflows
 
-- First infrastructure hire. Built the deploy system, the secrets pipeline,
-  and the initial observability stack from a blank repo.
-- Wrote the company's first incident review process. Still in use, mostly
-  unchanged, eight years later.
+- Built a source-security inspection tool that identifies hazardous patterns
+  and antipatterns across multiple programming languages and agent surfaces.
+- Added parser hardening, corpus expansion, installer validation, release
+  packaging, secure path handling, agent-file checks, and review-driven
+  security fixes.
+- Created a deterministic planning and implementation workflow for AI coding
+  agents, with approval gates, dependency-aware task graphs, challenge
+  sessions, validation backpressure, and structured review handoffs.
+- Built reusable workflows for documentation audits, repository-grounded
+  learning, cross-platform installation, and reduced-context agent execution.
+- Shipped a cross-platform architecture and operations advisor to help teams
+  assess sustainability, supportability, scope, and operational risk.
 
-## Open Source
+### Issue-management and workflow automation
 
-- **`weaver`** — a Rust crate for building deterministic distributed test
-  harnesses. 4.2k stars. Used in production by three companies I know of
-  and probably more I don't.
-- **`pgsnap`** — a Postgres logical-snapshot tool written in Go. Featured
-  in *Postgres Weekly* #487.
-- Occasional contributor to the **Pandoc**, **Nushell**, and **helix**
-  projects.
+- Developed a multi-tenant issue-management CLI with secure credential
+  retrieval, cross-version API support, platform-aware formatting, project and
+  issue-type discovery, body validation, and reusable authentication.
+- Added planning and execution support for structured work blueprints,
+  including priority resolution, relationship handling, examples, and offline
+  tests.
+- Built issue-routing, comment-posting, dashboard, and workflow integrations
+  that reduced repetitive operational work while preserving auditability.
+- Designed risk-evaluation workflows that enrich requests, apply explainable
+  rules, and route outcomes through existing approval processes.
 
-## Skills
+### Developer identity and repository workflows
 
-**Languages**: Rust, Go, Python, C, TypeScript, a bit of OCaml when no one
-is watching.
-**Systems**: Linux internals, eBPF, io_uring, distributed consensus
-(Raft/Paxos in anger), Postgres, ClickHouse, Kafka, NATS.
-**Practice**: Property-based testing, fuzzing, formal modelling with TLA+
-for the parts that warrant it, technical writing, mentoring.
+- Built identity-routing tooling for engineers working across multiple
+  organizational and personal Git identities.
+- Preserved standard repository URLs while selecting the correct SSH and
+  signing identity based on repository ownership.
+- Added private-repository installation, interactive setup, cross-platform
+  support, key verification, on-disk key storage, and release workflows.
+- Improved onboarding documentation and diagnostics, reducing the risk of
+  incorrect credentials or signing identities in enterprise development.
 
-## Education
+### Cloud infrastructure and security governance
 
-**MSc, Computer Science** — University of Cambridge, 2012
-**BA, Mathematics** — University of Cambridge, 2010
+- Designed and maintained infrastructure-as-code workflows for cloud
+  services, shared networking, identity, authorization, observability,
+  artifact storage, and deployment environments.
+- Built cloud-native service templates and deployment paths for containerized
+  workloads and event-driven systems.
+- Improved CI/CD with protected promotion paths, multi-architecture builds,
+  validation gates, release packaging, and environment-specific configuration.
+- Participated in security reviews, architecture assessments, firewall and
+  network-approval processes, endpoint-policy decisions, and operational
+  readiness work.
+- Converted recurring review and approval patterns into reusable
+  documentation, decision frameworks, scoring guidance, and automation-ready
+  rules.
 
-## Speaking & Writing
+## Core Strengths
 
-- *"Boring Storage for Exciting Problems"* — Strange Loop 2023
-- *"What I Learned Deleting 40,000 Lines of Code"* — QCon London 2022
-- Blog at <https://ada.example.com/writing> — roughly one post per month,
-  mostly about distributed systems pathologies.
+- **Security by default:** Deny-by-default authorization, least privilege,
+  managed identities, secret isolation, and bounded data exposure.
+- **Operationalization:** Moving prototypes and one-off procedures toward
+  tested services, reusable templates, documentation, dashboards, and support
+  workflows.
+- **Developer enablement:** Reducing friction in repository identity,
+  installation, issue management, AI-assisted development, and cross-platform
+  tooling.
+- **Systems thinking:** Balancing delivery speed with supportability,
+  lifecycle ownership, data architecture, tenant boundaries, and operational
+  toil.
+- **Quality:** Automated tests, linting, release validation, architecture
+  review, threat modeling, and explicit failure-path analysis.
+
+## Technical Focus
+
+**Cloud & infrastructure:** Infrastructure as code, containerized workloads,
+event-driven systems, CI/CD, identity and authorization, observability,
+artifact management, and multi-cloud integration.
+
+**Security:** Endpoint protection, policy enforcement, secure installation,
+managed identities, secrets management, threat modeling, source inspection,
+and security architecture.
+
+**Engineering:** Python, shell scripting, CLI design, APIs, service templates,
+cross-platform tooling, automated testing, release engineering, technical
+writing, and AI-agent workflows.
+
+## Professional Profile
+
+Security engineer and platform builder who connects security policy to
+reliable engineering workflows. Known for coordinating across platform,
+infrastructure, security operations, endpoint, cloud, and application teams,
+and for turning ambiguous operational problems into clear implementation
+sequences, acceptance criteria, and supportable systems.
+
+*This resume intentionally omits confidential company, organization,
+repository, project, ticket, tenant, infrastructure, service, URL, and
+operational-count details.*

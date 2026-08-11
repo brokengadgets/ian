@@ -7,8 +7,9 @@ get a polished web page plus downloadable PDF, DOCX, and RTF exports. The
 HTML page has a floating export bar; the other formats include a "View
 online" link back to the canonical URL.
 
-Demo content lives in `src/content/resume.md` and renders as a fictional
-resume so you can see what the output looks like before customizing.
+The current sample in `src/content/resume.md` is a publication-safe resume
+for a security engineer and platform builder. Replace it with your own
+Markdown when adapting this fork.
 
 ## Make this your own resume
 
@@ -19,7 +20,6 @@ resume so you can see what the output looks like before customizing.
 2. Clone your new repo locally.
 3. Replace the demo content. The places you need to touch:
    - `src/content/resume.md` — your name, contact info, and resume body.
-     Delete the demo callout at the top.
    - `package.json` — change `"name"` and `"version"` if you want.
    - `README.md` — replace this file with whatever describes your project.
    - **If you're not deploying via GitHub Pages**, also update
@@ -28,9 +28,9 @@ resume so you can see what the output looks like before customizing.
      from `actions/configure-pages` outputs, so you can leave them
      untouched if you're using the included workflow.
 
-   The PDF page footer and any leftover `https://ada.example.com` strings
-   in the source are automatically rewritten to `$SITE_URL` at build
-   time, so you don't need to edit `src/styles/print.css` by hand.
+   The PDF page footer and any leftover source URL are automatically
+   rewritten to `$SITE_URL` at build time, so you don't need to edit
+   `src/styles/print.css` by hand.
 4. (Optional) Customize the DOCX look: see `templates/README.md`.
 5. Build locally: `make` produces `dist/index.html` plus
    `resume.{pdf,docx,rtf}`.
