@@ -7,9 +7,9 @@ get a polished web page plus downloadable PDF, DOCX, and RTF exports. The
 HTML page has a floating export bar; the other formats include a "View
 online" link back to the canonical URL.
 
-The current sample in `src/content/resume.md` is a publication-safe resume
-for a security engineer and platform builder. Replace it with your own
-Markdown when adapting this fork.
+The repository keeps a comprehensive resume plus concise role-specific
+variants. The root page and root exports use `resume-general.md`; the full
+history is available at `/comprehensive` from `resume-comprehensive.md`.
 
 ## Make this your own resume
 
@@ -19,7 +19,8 @@ Markdown when adapting this fork.
    own repo name; the new repo starts with no history.
 2. Clone your new repo locally.
 3. Replace the demo content. The places you need to touch:
-   - `src/content/resume.md` — your name, contact info, and resume body.
+   - `src/content/resume-*.md` — the comprehensive resume and role-specific
+     variants. Keep contact details synchronized across variants.
    - `package.json` — change `"name"` and `"version"` if you want.
    - `README.md` — replace this file with whatever describes your project.
    - **If you're not deploying via GitHub Pages**, also update
@@ -32,8 +33,10 @@ Markdown when adapting this fork.
    rewritten to `$SITE_URL` at build time, so you don't need to edit
    `src/styles/print.css` by hand.
 4. (Optional) Customize the DOCX look: see `templates/README.md`.
-5. Build locally: `make` produces `dist/index.html` plus
-   `resume.{pdf,docx,rtf}`.
+5. Build locally: `make` produces the general resume at `dist/index.html`
+   plus root `resume.{pdf,docx,rtf}`. Role-specific pages and exports are
+   written under `dist/{variant}/`; the comprehensive version is under
+   `dist/comprehensive/`.
 6. Deploy. Two options:
    - **GitHub Pages** (auto): in your repo, go to **Settings → Pages** and
      set **Source: GitHub Actions**. Push to `main` and the included
@@ -60,7 +63,9 @@ tags.
 .
 ├── src/
 │   ├── content/
-│   │   └── resume.md          # YOUR RESUME — edit this
+│   │   ├── resume-comprehensive.md # complete resume archive
+│   │   ├── resume-general.md       # root 1–2 page resume
+│   │   └── resume-*.md             # role-specific variants
 │   ├── layouts/
 │   │   └── Resume.astro       # HTML shell, injects export bar
 │   ├── components/
@@ -134,8 +139,9 @@ without any manual edits to `print.css`.
 
 ## Customizing
 
-- **Content**: edit `src/content/resume.md`. Frontmatter holds name,
-  contact info, and theme toggles.
+- **Content**: edit the appropriate `src/content/resume-*.md` variant.
+  `resume-comprehensive.md` is the complete archive; the other files are
+  curated role-specific resumes.
 - **Style**: `src/styles/resume.css` for screen, `src/styles/print.css`
   for paged output. Both are consumed by WeasyPrint via Astro's built
   HTML, so the PDF matches the webpage closely.
