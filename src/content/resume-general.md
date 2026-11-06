@@ -16,6 +16,21 @@ summary: >
   Rust, and Python.
 ---
 
+## Technical Focus
+
+**Security:** Security platform architecture, endpoint protection (MDE/MDO/MDC),
+source-code & AI-agent security inspection, federated identity, zero-plaintext
+secrets management, threat modeling, ETW/ETL performance forensics, and
+embedded/firmware vulnerability research.
+
+**Engineering:** Go, Rust, Python, C/C++, shell scripting, API & gateway design,
+multi-tenant CLI design, infrastructure as code, deterministic agent workflows,
+automated testing, and release engineering.
+
+**Platforms:** Azure, Google Cloud, Microsoft Graph, Sentinel, Cribl, Nix/NixOS,
+Terraform, Docker, Podman, KVM/libvirt, GitHub Actions, Azure DevOps, Linux,
+Windows, and macOS.
+
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
@@ -27,11 +42,12 @@ summary: >
   across Azure, Google Cloud, and hybrid on-premises data centers and
   subsidiary networks.
 - Built and shipped cross-platform endpoint-security tooling in Rust, Go, and
-  Python across Linux, Windows, and macOS estates—including an `aarch64`/`x86_64`
-  Linux onboarding suite, a KVM/libvirt dynamic-analysis lab for reverse
-  engineering EDR internals, an ETW/ETL trace analyzer attributing Defender scan
-  CPU overhead to root processes, and a multi-tenant exclusions CLI with
-  merge-blocking integration tests.
+  Python across Linux, Windows, and macOS estates—including a statically linked
+  Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
+  pipeline, a KVM/libvirt dynamic-analysis lab for reverse engineering EDR
+  internals, an ETW/ETL trace analyzer attributing Defender scan CPU overhead to
+  root processes, and a multi-tenant exclusions CLI with merge-blocking
+  integration tests.
 - Unblocked a global Linux endpoint-security rollout across multiple business
   units by diagnosing and fixing a package-dependency failure that had halted
   configuration management and fleet deployment.
@@ -68,24 +84,9 @@ and embedded-systems research work.
 Developed and taught cybersecurity workshops covering Linux security, network
 attacks, industrial-control systems, SQL injection, and incident response.
 
-## Technical Focus
-
-**Security:** Security platform architecture, endpoint protection (MDE/MDO/MDC),
-source-code & AI-agent security inspection, federated identity, zero-plaintext
-secrets management, threat modeling, ETW/ETL performance forensics, and
-embedded/firmware vulnerability research.
-
-**Engineering:** Go, Rust, Python, C/C++, shell scripting, API & gateway design,
-multi-tenant CLI design, infrastructure as code, deterministic agent workflows,
-automated testing, and release engineering.
-
-**Platforms:** Azure, Google Cloud, Microsoft Graph, Sentinel, Cribl, Nix/NixOS,
-Terraform, Docker, Podman, KVM/libvirt, GitHub Actions, Azure DevOps, Linux,
-Windows, and macOS.
-
 ## Selected Strengths
 
 - Security-by-default design and operationalization
 - Cross-platform systems integration and developer enablement
-- Clear implementation plans, acceptance criteria, and documentation
+- Deployment automation, automated testing harnesses, and clear software documentation
 - Automated validation, observability, and reliable delivery

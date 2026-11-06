@@ -14,6 +14,19 @@ summary: >
   Linux, Windows, and macOS.
 ---
 
+## Technical Focus
+
+**Infrastructure:** Terraform, Terragrunt, Nix, NixOS, Ansible, Salt, Puppet,
+Docker, Podman, libvirt, KVM, infrastructure as code, configuration management,
+and release engineering.
+
+**Cloud and delivery:** Azure, Google Cloud, Microsoft Graph, Sentinel, Cribl,
+GitHub Actions, Azure DevOps, CI/CD, containers, serverless workloads,
+event-driven systems, federated identity, networking, and observability.
+
+**Engineering:** Go, Rust, Python, shell scripting, APIs, multi-tenant CLI
+design, automated testing, cross-platform tooling, and systems integration.
+
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
@@ -28,11 +41,11 @@ summary: >
   on-premises data centers and subsidiary networks using managed identities,
   1Password secret isolation, and deny-by-default RBAC.
 - Engineered cross-platform Microsoft Defender for Endpoint (MDE) deployment and
-  fleet automation across Linux, Windows, and macOS—including a Rust Linux
-  onboarding/diagnostics suite (`x86_64`/`aarch64`), an OpenTofu/KVM/libvirt
-  dynamic-analysis lab for inspecting EDR internals, an ETW/ETL
-  process-attribution trace analyzer, and a multi-tenant exclusions CLI with
-  merge-blocking integration tests.
+  fleet automation across Linux, Windows, and macOS—including a statically linked
+  Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
+  pipeline, an OpenTofu/KVM/libvirt dynamic-analysis lab for inspecting EDR
+  internals, an ETW/ETL process-attribution trace analyzer, and a multi-tenant
+  exclusions CLI with merge-blocking integration tests.
 - Unblocked a multi-unit enterprise Linux MDE onboarding program by diagnosing
   and fixing a package-dependency failure that had crashed configuration
   management and halted fleet rollout.
@@ -57,16 +70,3 @@ summary: >
   across Windows, macOS, Android, iOS, Minix, and Linux.
 - Integrated Linux servers, OAuth2 SSO, cloud EMR systems, MySQL, and SQLite;
   maintained firewalls, security cameras, sensors, and electronic locks.
-
-## Technical Focus
-
-**Infrastructure:** Terraform, Terragrunt, Nix, NixOS, Ansible, Salt, Puppet,
-Docker, Podman, libvirt, KVM, infrastructure as code, configuration management,
-and release engineering.
-
-**Cloud and delivery:** Azure, Google Cloud, Microsoft Graph, Sentinel, Cribl,
-GitHub Actions, Azure DevOps, CI/CD, containers, serverless workloads,
-event-driven systems, federated identity, networking, and observability.
-
-**Engineering:** Go, Rust, Python, shell scripting, APIs, multi-tenant CLI
-design, automated testing, cross-platform tooling, and systems integration.

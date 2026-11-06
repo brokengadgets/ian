@@ -15,6 +15,20 @@ summary: >
   runtime.
 ---
 
+## Technical Focus
+
+**Application security:** Secure design review, threat modeling, source
+inspection, vulnerability research, parser hardening, secure installation,
+identity and authorization, secrets management, policy enforcement, and
+security automation.
+
+**Engineering:** Python, C/C++, Rust, Go, shell scripting, APIs, automated
+testing, CI/CD, release validation, and technical documentation.
+
+**Analysis:** Static and dynamic analysis, coverage-guided fuzzing, Ghidra, GDB,
+Pwndbg, QEMU, Unicorn, Clang-Tidy, RustFmt, PyLint, Rudra, Yersinia, Z3, Scapy,
+Snort, Nmap, and Splunk.
+
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
@@ -52,17 +66,3 @@ summary: >
 
 Developed and taught workshops covering Linux hardening, ARP poisoning, firewall
 configuration, SQL injection, BACnet red teaming, and incident response.
-
-## Technical Focus
-
-**Application security:** Secure design review, threat modeling, source
-inspection, vulnerability research, parser hardening, secure installation,
-identity and authorization, secrets management, policy enforcement, and
-security automation.
-
-**Engineering:** Python, C/C++, Rust, Go, shell scripting, APIs, automated
-testing, CI/CD, release validation, and technical documentation.
-
-**Analysis:** Static and dynamic analysis, coverage-guided fuzzing, Ghidra, GDB,
-Pwndbg, QEMU, Unicorn, Clang-Tidy, RustFmt, PyLint, Rudra, Yersinia, Z3, Scapy,
-Snort, Nmap, and Splunk.

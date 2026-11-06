@@ -15,6 +15,19 @@ summary: >
   backpressure, and fail-closed automation.
 ---
 
+## Technical Focus
+
+**AI and agent security:** AI-assisted engineering, source inspection, agent-file
+checks, secure path handling, deterministic workflows, approval gates, human
+review, validation backpressure, policy-aware automation, and explainable routing.
+
+**Engineering:** Python, Go, Rust, C/C++, shell scripting, APIs, CLI design,
+automated testing, release engineering, Docker, CI/CD, and technical writing.
+
+**Cloud and security:** Azure AI services, identity and authorization, secrets
+isolation, infrastructure as code, observability, threat modeling, and least
+privilege.
+
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
@@ -57,16 +70,3 @@ summary: >
 
 Maintain a consulting company used for contract security, firmware development,
 and embedded-systems research work.
-
-## Technical Focus
-
-**AI and agent security:** AI-assisted engineering, source inspection, agent-file
-checks, secure path handling, deterministic workflows, approval gates, human
-review, validation backpressure, policy-aware automation, and explainable routing.
-
-**Engineering:** Python, Go, Rust, C/C++, shell scripting, APIs, CLI design,
-automated testing, release engineering, Docker, CI/CD, and technical writing.
-
-**Cloud and security:** Azure AI services, identity and authorization, secrets
-isolation, infrastructure as code, observability, threat modeling, and least
-privilege.

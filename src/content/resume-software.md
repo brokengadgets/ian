@@ -14,6 +14,20 @@ summary: >
   failure boundaries, zero-plaintext credential models, and repeatable delivery.
 ---
 
+## Technical Focus
+
+**Languages:** Python, Go, Rust, C/C++, assembly, Forth, and shell scripting.
+
+**Software engineering:** API and CLI design, service templates, cross-platform
+tooling, infrastructure automation, automated testing, release engineering,
+Git, CI/CD, and technical writing.
+
+**Tools:** Cargo Test, GTest, Python unittest, Clang-Tidy, RustFmt, PyLint,
+Docker, Podman, GitHub Actions, and Azure DevOps.
+
+**Cloud:** Azure and Google Cloud services, identity, containers, serverless
+workloads, observability, artifact management, and event-driven systems.
+
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
@@ -30,10 +44,10 @@ summary: >
   durable request/event/operation ledger, at-most-once mutation dispatch,
   bounded read-only reconciliation for uncertain writes, and zero-I/O boundary
   guards.
-- Authored a Go-based Git SSH and commit-signing identity router, a Rust Linux
-  MDE onboarding/diagnostics binary (`x86_64`/`aarch64` MUSL builds), a Windows
-  ETW/ETL process-attribution trace reader, and a standard-library-only Go CLI
-  for local quantized LLM evaluation.
+- Authored a Go-based Git SSH and commit-signing identity router, a statically
+  linked Rust Linux MDE onboarding installer (`x86_64`/`aarch64` MUSL builds),
+  a Windows ETW/ETL process-attribution trace reader, and a standard-library-only
+  Go CLI for local quantized LLM evaluation.
 - Rewrote a legacy serverless bucket-proxy function in Go for substantially
   faster execution and improved CI/CD with multi-architecture release matrices,
   merge-blocking integration suites, and staged promotion gates.
@@ -53,17 +67,3 @@ embedded-systems research.
   and wrote proposals for federally funded projects.
 - Deployed source- and binary-based coverage-guided fuzzers and developed
   static and dynamic analysis workflows for ARM firmware.
-
-## Technical Focus
-
-**Languages:** Python, Go, Rust, C/C++, assembly, Forth, and shell scripting.
-
-**Software engineering:** API and CLI design, service templates, cross-platform
-tooling, infrastructure automation, automated testing, release engineering,
-Git, CI/CD, and technical writing.
-
-**Tools:** Cargo Test, GTest, Python unittest, Clang-Tidy, RustFmt, PyLint,
-Docker, Podman, GitHub Actions, and Azure DevOps.
-
-**Cloud:** Azure and Google Cloud services, identity, containers, serverless
-workloads, observability, artifact management, and event-driven systems.

@@ -25,6 +25,29 @@ multi-tenant CLIs, and infrastructure-as-code across 1,500+ tracked engineering
 deliverables and 35+ internal tools and services, with a rigorous focus on
 deny-by-default authorization, secret isolation, and repeatable validation.
 
+## Technical Focus
+
+**Cloud & infrastructure:** Infrastructure as code, containerized workloads,
+event-driven systems, CI/CD, identity and authorization, observability,
+artifact management, and multi-cloud integration.
+
+**Security:** Endpoint protection, policy enforcement, secure installation,
+managed identities, secrets management, threat modeling, source inspection,
+security architecture, vulnerability research, purple teaming, and secure
+embedded systems.
+
+**Embedded and reverse engineering:** ARM Cortex and ARM32 firmware, AVR, MIPS,
+PPC, RTOS environments, hardware drivers, Ghidra, GDB, Pwndbg, QEMU, Unicorn,
+coverage-guided fuzzing, static analysis, dynamic analysis, and network
+protocol analysis.
+
+**Engineering:** Python, C/C++, Rust, Go, assembly, Forth, shell scripting,
+CLI design, APIs, service templates, embedded development, cross-platform
+tooling, automated testing, release engineering, technical writing, and
+AI-agent workflows. Familiar with GTest, Cargo Test,
+Python unittest, Clang-Tidy, RustFmt, PyLint, Rudra, Yersinia, Z3, Scapy, Snort,
+Nmap, Splunk, and Azure DevOps.
+
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
@@ -36,11 +59,12 @@ deny-by-default authorization, secret isolation, and repeatable validation.
   across Azure, Google Cloud, and hybrid on-premises data centers and
   subsidiary networks.
 - Built and shipped cross-platform endpoint-security tooling in Rust, Go, and
-  Python across Linux, Windows, and macOS estates—including an `aarch64`/`x86_64`
-  Linux onboarding and diagnostics suite, a KVM/libvirt dynamic-analysis lab for
-  studying EDR internals, a Windows ETW/ETL trace analyzer attributing Defender
-  scan overhead to root processes, and a multi-tenant exclusions CLI with
-  merge-blocking integration tests.
+  Python across Linux, Windows, and macOS estates—including a statically linked
+  Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
+  pipeline, a KVM/libvirt dynamic-analysis lab for studying EDR internals, a
+  Windows ETW/ETL trace analyzer attributing Defender scan overhead to root
+  processes, and a multi-tenant exclusions CLI with merge-blocking integration
+  tests.
 - Unblocked a global Linux endpoint-security rollout across multiple business
   units by isolating and fixing a package-dependency failure that had crashed
   configuration management and halted fleet deployment.
@@ -163,7 +187,7 @@ research services, primarily for ARM Cortex platforms.
 - Engineered and operated Microsoft Defender for Endpoint (MDE) deployment,
   policy automation, and diagnostics across Linux, Windows, and macOS estates
   spanning globally distributed business units and acquired subsidiary networks.
-- Built a Rust-based Linux onboarding and diagnostics tool (`x86_64`/`aarch64`,
+- Built a statically linked Rust Linux onboarding installer (`x86_64`/`aarch64`,
   MUSL/GitHub release pipelines) with tenant-aware configuration, URL/JSON
   validation, retry logic, and automated support-ticket integration.
 - Built a Windows ETW/ETL trace reader that attributes Defender scan duration
@@ -268,8 +292,6 @@ research services, primarily for ARM Cortex platforms.
 - Converted recurring security-operations knowledge into troubleshooting
   guides, live demonstrations, recordings, and reusable onboarding
   documentation, reducing dependence on individual subject-matter experts.
-- Produced planning artifacts and technical briefs with implementation
-  sequences, dependencies, acceptance criteria, and residual risks.
 - Fixed and production-deployed a defect in an automated ticket-routing
   service, improving reliability in a workflow used by security operations.
 
@@ -288,29 +310,6 @@ research services, primarily for ARM Cortex platforms.
   toil.
 - **Quality:** Automated tests, linting, release validation, architecture
   review, threat modeling, and explicit failure-path analysis.
-
-## Technical Focus
-
-**Cloud & infrastructure:** Infrastructure as code, containerized workloads,
-event-driven systems, CI/CD, identity and authorization, observability,
-artifact management, and multi-cloud integration.
-
-**Security:** Endpoint protection, policy enforcement, secure installation,
-managed identities, secrets management, threat modeling, source inspection,
-security architecture, vulnerability research, purple teaming, and secure
-embedded systems.
-
-**Embedded and reverse engineering:** ARM Cortex and ARM32 firmware, AVR, MIPS,
-PPC, RTOS environments, hardware drivers, Ghidra, GDB, Pwndbg, QEMU, Unicorn,
-coverage-guided fuzzing, static analysis, dynamic analysis, and network
-protocol analysis.
-
-**Engineering:** Python, C/C++, Rust, Go, assembly, Forth, shell scripting,
-CLI design, APIs, service templates, embedded development, cross-platform
-tooling, automated testing, release engineering, technical writing, and
-AI-agent workflows. Familiar with GTest, Cargo Test,
-Python unittest, Clang-Tidy, RustFmt, PyLint, Rudra, Yersinia, Z3, Scapy, Snort,
-Nmap, Splunk, and Azure DevOps.
 
 ## Tools & Platforms
 
@@ -332,8 +331,9 @@ Nmap, Splunk, and Azure DevOps.
 Security engineer and platform builder who connects security policy to
 reliable engineering workflows. Known for coordinating across platform,
 infrastructure, security operations, endpoint, cloud, and application teams,
-and for turning ambiguous operational problems into clear implementation
-sequences, acceptance criteria, and supportable systems.
+and for turning ambiguous operational problems into automated deployment
+pipelines, comprehensive test harnesses, clear software documentation, and
+supportable systems.
 
 *This resume intentionally omits confidential company, organization,
 repository, project, ticket, tenant, infrastructure, service, URL, and
