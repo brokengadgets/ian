@@ -18,6 +18,7 @@ export default defineConfig({
   output: 'static',
   build: {
     assets: 'assets',
+    inlineStylesheets: 'always',
   },
   markdown: {
     smartypants: true,

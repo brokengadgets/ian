@@ -23,6 +23,7 @@ build_exports() {
   sed \
     -e "s|https://brokengadgets\\.github\\.io/ian/|$SITE_URL|g" \
     -e "s|brokengadgets\\.github\\.io/ian|${SITE_URL#https://}|g" \
+    -e 's|<p class="continued-heading">\(.*\) <em>(continued)</em></p>|`<w:p><w:r><w:br w:type="page"/></w:r></w:p>`{=openxml}`\\page `{=rtf}\n\n**\1** *(continued)*|g' \
     "$src_md" > "$combined"
   cat >> "$combined" <<EOF
 
