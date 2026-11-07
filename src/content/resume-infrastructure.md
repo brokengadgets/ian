@@ -32,14 +32,14 @@ design, automated testing, cross-platform tooling, and systems integration.
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
 *January 2023–Present*
 
-- Led Security Platform-as-Code consolidation unifying Defender-as-Code
-  (MS Graph/Intune) and Sentinel/Cribl logging pipelines under federated
-  identity, subscription-less MS Graph plan scoping, and staged promotion
-  guardrails (`PR → validate → plan → approve → deploy → verify`).
 - Architected infrastructure-as-code and Go service templates for a shared
   multi-service security platform across Azure, Google Cloud, and hybrid
   on-premises data centers and subsidiary networks using managed identities,
   1Password secret isolation, and deny-by-default RBAC.
+- Consulted on and built Terraform/Terragrunt prototypes for consolidating
+  Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl security-logging
+  pipelines under federated identity, subscription-less MS Graph plan scoping,
+  and staged promotion guardrails (`PR → validate → plan → approve → deploy → verify`).
 - Engineered cross-platform endpoint-security deployment, fleet automation, and
   bidirectional CrowdStrike Falcon ↔ Microsoft Defender (MDE) migrations across
   Linux, Windows, and macOS—including a statically linked Rust Linux onboarding
@@ -48,10 +48,11 @@ design, automated testing, cross-platform tooling, and systems integration.
   multi-tenant exclusions CLI with merge-blocking integration tests.
 - Unblocked a multi-unit enterprise Linux endpoint-security rollout by
   diagnosing and fixing a package-dependency failure that had crashed
-  configuration management and halted fleet deployment.
-- Built a Go-based multi-org Git SSH and commit-signing identity router,
-  multi-tenant Jira and Azure DevOps CLIs, and cloud control-plane remediation
-  workflows for exposed-credential purges and multi-board service recovery.
+  configuration management and halted rollout.
+- Built a Go-based multi-org Git SSH and commit-signing identity router and
+  GitHub EMU repository migrator, multi-tenant Jira and Azure DevOps CLIs, and
+  cloud control-plane remediation workflows for exposed-credential purges and
+  multi-board service recovery.
 - Designed a Google Cloud to on-premises bridge with least-privilege IAM,
   artifact controls, and observability that decoupled generalized platform
   transport from environment-specific legacy infrastructure, connecting
@@ -65,25 +66,28 @@ design, automated testing, cross-platform tooling, and systems integration.
 
 <p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
 
-- Engineered a fail-closed security support bot and policy-aware ticket/incident
-  dispatcher with durable request ledgers, confirmed-ticket-before-work gating,
+- Engineered a fail-closed security support bot and Azure DevOps event-worker
+  pipeline with durable request ledgers, confirmed-ticket-before-work gating,
   bounded read-only reconciliation for uncertain writes, and full
   infrastructure-as-code deployment.
 - Evolved manual firewall and security-architecture reviews into an explainable
   risk-evaluation service with automated enrichment, deterministic scoring, soak
-  testing, and reason-code telemetry, and built a polyglot source-security
-  inspector and deterministic AI-agent orchestration framework.
+  testing, and reason-code telemetry, and authored a cross-platform
+  architecture/SRE readiness advisor (`ARIA`).
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting company for contract security, firmware development, and
-embedded-systems research.
+Maintain a consulting and independent R&D company for contract security,
+infrastructure automation, and embedded-systems research.
 
+- Engineered a declarative NixOS dual-WAN router and firewall on PC Engines
+  APU4D4 hardware featuring default-deny `nftables` WAN filters, strict L3
+  client isolation, automated WAN failover, and local Prometheus/Loki/Grafana
+  telemetry, plus a self-hosted AMD ROCm local LLM stack in Docker.
 - Extended the Tock OS real-time operating system, built Rust hardware drivers
   for wearable ARM/ESP devices, maintained portable Docker cross-compilation
-  toolchains, and conducted UHF radio-propagation trials across Wi-Fi, BLE,
-  433 MHz, and 315 MHz bands.
+  toolchains, and conducted UHF radio-propagation trials.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
@@ -116,6 +120,6 @@ embedded-systems research.
 ## Selected Strengths
 
 - Multi-cloud Infrastructure as Code (Terraform, Terragrunt, OpenTofu, NixOS)
-- Security Platform-as-Code consolidation and federated identity pipelines
+- Security Platform-as-Code architecture and federated identity pipelines
 - Deployment automation, automated testing harnesses, and clear software documentation
 - Cross-platform endpoint fleet engineering across Linux, Windows, and macOS

@@ -33,34 +33,33 @@ privilege.
 ### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
 *January 2023–Present*
 
-- Created a deterministic Analyze → Implement → Review orchestration
-  framework for AI coding agents featuring explicit approval gates,
-  dependency-aware task graphs, adversarial challenge passes, formal
-  acceptance-criteria backpressure, and holdout-isolated verification.
-- Built a polyglot source-security inspector to detect security hazards across
-  Go, Python, TypeScript/JavaScript, PowerShell, Terraform, and AI-agent
-  skill/prompt files, hardening parser and canonical-path boundaries.
-- Built a local-first, standard-library-only Go CLI for hardware-aware
-  quantized LLM evaluation (GGUF/llama.cpp, AWQ, EXL2) with subprocess input
-  hardening and file-boundary verification.
+- Co-developed a polyglot source-security inspector to detect security hazards
+  across Go, Python, TypeScript/JavaScript, PowerShell, Terraform, and AI-agent
+  skill/prompt files—authoring vulnerability corpora, agent-file validators,
+  EDR-safe release packaging, and PowerShell canonical-path symlink checks.
+- Contributed repository-grounded tutoring and assessment skills (`teach-me`,
+  `quiz-me`) and cross-platform WSL/PowerShell installer fixes to a
+  deterministic Analyze → Implement → Review AI-agent orchestration framework.
+- Contributed EXL2/AWQ subprocess input hardening, calibration dataset
+  validation, and Pi agent configuration helpers to a local-first Go CLI for
+  hardware-aware quantized LLM evaluation.
 - Architected and rolled out a shared Azure AI Foundry inference gateway with
   deny-by-default per-deployment RBAC, managed-identity authentication,
   1Password secret isolation, JWT re-verification, RFC 7807 errors, and upstream
   body-leakage prevention.
-- Shipped a cross-platform architecture, reliability, and operations advisor and
-  a portable agent-skill catalog (issue-tracker automation, MCP security baseline
-  reviews, third-party risk assessments) supporting GitHub Copilot, Claude Code,
-  Codex, and Pi across Linux, macOS, Windows, and WSL.
+- Authored a cross-platform architecture, reliability, and operations advisor
+  (`ARIA`) supporting GitHub Copilot, Claude Code, Codex, and Pi across Linux,
+  macOS, Windows, and WSL, and streamlined ticket-policy skills in the shared
+  agent catalog.
 - Engineered a fail-closed security support bot and risk-evaluation engine with
   durable request ledgers, confirmed-ticket-before-work gating, bounded
   reconciliation for uncertain writes, and explainable reason-code telemetry.
-- Launched a policy-aware ticket and incident dispatcher monitoring collaboration
-  channels to classify actionable requests, enforce organizational ticket-writing
-  rules, and route work into issue trackers with full infrastructure-as-code and
-  least-privilege RBAC.
-- Built automated security-review transcript summarization and Slack reporting
-  pipelines that extract action items, validate ticket references against live
-  trackers, and publish structured thread summaries on a recurring schedule.
+- Contributed to an AI-assisted ticket and incident dispatcher by hardening JSON
+  field extraction, Jira/GoJira error handling, and staffing-capacity routing
+  rules across collaboration channels.
+- Designed a Google Cloud to on-premises bridge with least-privilege IAM,
+  artifact controls, and observability, and unblocked a multi-unit Linux
+  endpoint rollout by fixing a package-dependency defect.
 
 <p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
 
@@ -72,20 +71,20 @@ privilege.
   references, background auth agents, and offline-tested YAML/JSON work
   blueprints, plus a Go-based multi-org Git SSH and commit-signing identity
   router.
-- Evolved manual firewall and architecture reviews into an explainable
-  risk-evaluation service with automated enrichment, deterministic scoring, soak
-  testing, production promotion, and metrics by outcome, failure mode, and
-  reason code.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting company for contract security, firmware development, and
-embedded-systems research.
+Maintain a consulting and independent R&D company for contract security,
+AI/systems engineering, and embedded research.
 
+- Built a self-hosted AMD ROCm local LLM stack (`llama.cpp` with flash attention
+  and Q8 KV cache behind an Anthropic-compatible LiteLLM proxy), a deterministic
+  Go gameplay agent and evaluation harness for *Cultist Simulator*, and a local
+  webcam iris-gaze tracker for Hyprland window focus.
 - Extended the Tock OS real-time operating system, built Rust hardware drivers
-  and graphical interfaces for wearable ARM and ESP devices, and implemented
-  out-of-band Bluetooth authentication for embedded medical devices.
+  and graphical interfaces for wearable ARM/ESP devices, and implemented
+  out-of-band Bluetooth authentication for medical devices.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
@@ -95,13 +94,13 @@ embedded-systems research.
   fuzzers.
 - Provided security guidance for cloud-based emulation technologies, built
   cross-platform Docker development environments, and maintained Azure DevOps
-  build and test pipelines.
+  CI/CD pipelines.
 - Led security researchers delivering three DARPA SLCS research papers with
   accompanying technology demonstrations and wrote federal research proposals.
 - Designed vulnerability mitigations for life-critical environments,
   reverse-engineered FreeRTOS, Zephyr, Tock, and Nordic SoftDevice deployments,
-  and developed techniques for hospital ICS and power-grid purple-team
-  exercises alongside US Cyber Command and utility partners.
+  and developed hospital ICS and power-grid purple-team techniques with US Cyber
+  Command.
 
 ### Hack All the Things, LLC — Principal Courseware Developer
 *April 2015–October 2019*
@@ -114,9 +113,8 @@ embedded-systems research.
 *April 2016–June 2018*
 
 - Operated a three-building medical-campus network serving 150+ staff;
-  integrated Linux server stacks, OAuth2 SSO, cloud EMR systems, and
-  MySQL/SQLite, wrote Bash and Python automation scripts, and led vulnerability
-  management and firewall hardening.
+  integrated Linux servers, OAuth2 SSO, cloud EMR systems, and MySQL/SQLite,
+  wrote Bash/Python automation scripts, and hardened internal/edge firewalls.
 
 ## Selected Strengths
 

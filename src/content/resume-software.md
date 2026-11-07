@@ -44,19 +44,20 @@ workloads, observability, artifact management, and event-driven systems.
   durable request/event/operation ledger, at-most-once mutation dispatch,
   bounded read-only reconciliation for uncertain writes, and zero-I/O boundary
   guards.
-- Authored a Go-based Git SSH and commit-signing identity router, a statically
-  linked Rust Linux endpoint-security onboarding installer (`x86_64`/`aarch64`
-  MUSL builds), a Windows ETW/ETL process-attribution trace reader, and a
-  standard-library-only Go CLI for local quantized LLM evaluation.
+- Authored a Go-based Git SSH and commit-signing identity router and GitHub EMU
+  repository migrator, a statically linked Rust Linux endpoint-security
+  onboarding installer (`x86_64`/`aarch64` MUSL builds), and a Windows ETW/ETL
+  process-attribution trace reader.
 - Rewrote a legacy serverless bucket-proxy function in Go for substantially
   faster execution and improved CI/CD with multi-architecture release matrices,
   merge-blocking integration suites, and staged promotion gates.
-- Built a polyglot source-security inspector covering Go, Python,
-  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces with
-  parser hardening, canonical-path enforcement, and constant-time token checks,
-  plus a deterministic Analyze → Implement → Review AI-agent workflow.
-- Contributed C/C++ Wayland fractional-scaling, buffer-scale, and Vulkan
-  window-surface state fixes to Blender on Linux.
+- Co-developed a polyglot source-security inspector covering Go, Python,
+  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces,
+  contributed EXL2/AWQ subprocess boundary checks to a Go LLM quantization CLI,
+  and contributed companion skills (`teach-me`, `quiz-me`) and WSL/PowerShell
+  installer fixes to an AI-agent orchestration framework.
+- Contributed compositor regression tests (bilateral blur, glare streaks, keying
+  screen, mask/pixelate/group nodes) to upstream Blender.
 - Unblocked a multi-unit Linux endpoint-security rollout by isolating and fixing
   a package-dependency failure that had crashed configuration management, and
   fixed a production randomness defect in an automated ticket-routing service.
@@ -65,23 +66,24 @@ workloads, observability, artifact management, and event-driven systems.
 
 - Evolved manual firewall and architecture reviews into an explainable
   risk-evaluation service in Go and Python with automated request enrichment,
-  deterministic scoring rules, soak testing, and reason-code telemetry, plus a
-  policy-aware ticket and incident dispatcher.
+  deterministic scoring rules, soak testing, and reason-code telemetry, and
+  hardened JSON decoding and Jira error handling in an event-driven ticket
+  dispatcher.
 - Built a multi-tenant endpoint-policy and exclusions CLI with testbed
   validation and merge-blocking integration tests supporting CrowdStrike Falcon
   and Microsoft Defender (MDE) migrations, and an OpenTofu/KVM/libvirt
   dynamic-analysis lab for inspecting sensor kernel/daemon behavior.
-- Consolidated Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl logging
-  pipelines under federated identity and staged promotion guardrails, and
-  designed a Google Cloud to on-premises bridge decoupling platform transport
-  from legacy dependencies.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting company for firmware development, Rust engineering, and
-embedded-systems research.
+Maintain a consulting and independent R&D company for software engineering,
+firmware development, and systems research.
 
+- Built a deterministic Go gameplay CLI and evaluation harness for *Cultist
+  Simulator*, a client-side Go/WebAssembly save-file editor, a local webcam
+  iris-gaze daemon driving Hyprland window focus, and a cross-platform Flutter
+  interactive language-learning app.
 - Extended the Tock OS real-time operating system, built graphical interfaces
   and Rust hardware drivers for wearable ARM and ESP devices, implemented
   out-of-band Bluetooth authentication for medical devices, and maintained

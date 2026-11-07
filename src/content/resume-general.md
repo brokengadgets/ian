@@ -21,7 +21,7 @@ summary: >
 **Security:** Security platform architecture, endpoint protection & migrations
 (CrowdStrike Falcon, MDE/MDO/MDC), source-code & AI-agent security inspection,
 federated identity, zero-plaintext secrets management, threat modeling, ETW/ETL
-performance forensics, and embedded/firmware vulnerability research.
+performance forensics, and firmware vulnerability research.
 
 **Engineering:** Go, Rust, Python, C/C++, shell scripting, API & gateway design,
 multi-tenant CLI design, infrastructure as code, deterministic agent workflows,
@@ -54,25 +54,26 @@ Windows, and macOS.
   integration tests.
 - Unblocked a global Linux endpoint-security rollout across multiple business
   units by diagnosing and fixing a package-dependency failure that had crashed
-  configuration management and halted fleet deployment.
-- Created a polyglot source-security inspector covering Go, Python,
-  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces, a
-  deterministic Analyze → Implement → Review AI-agent orchestration framework,
-  and a local-first Go LLM quantization evaluator with strict runtime boundary
-  checks.
+  configuration management and halted rollout.
+- Co-developed a polyglot source-security inspector covering Go, Python,
+  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces,
+  contributed companion tutoring/assessment skills (`teach-me`, `quiz-me`) and
+  WSL/PowerShell installer fixes to a deterministic AI-agent orchestration
+  framework, and contributed runtime boundary checks to a Go LLM quantization
+  evaluator.
 - Engineered multi-tenant Jira and Azure DevOps automation CLIs with
   1Password-injected auth and offline-tested blueprints, plus a Go-based
-  multi-org Git SSH and commit-signing identity router across personal and
-  enterprise GitHub EMU tenants.
-- Consolidated Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl logging
-  into a unified Security Platform-as-Code pipeline with federated identity,
-  subscription-less MS Graph plan scoping, and automated cloud-identity
-  hand-back receivers.
+  multi-org Git SSH and commit-signing identity router and GitHub EMU repository
+  migrator.
+- Consulted on and built prototypes for unifying Defender-as-Code (MS
+  Graph/Intune) and Sentinel/Cribl logging into a consolidated Security
+  Platform-as-Code operating model with federated identity and subscription-less
+  MS Graph plan scoping.
 
 <p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
 
-- Built a fail-closed security support bot and policy-aware ticket/incident
-  dispatcher featuring durable request ledgers, confirmed-ticket-before-work
+- Built a fail-closed security support bot and Azure DevOps event-worker
+  pipeline featuring durable request ledgers, confirmed-ticket-before-work
   gating, and bounded read-only reconciliation for uncertain writes, plus an
   explainable risk-evaluation service with automated enrichment, deterministic
   scoring, soak testing, and reason-code telemetry.
@@ -85,12 +86,16 @@ Windows, and macOS.
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting company for contract security, firmware development, and
-embedded-systems research.
+Maintain a consulting and independent R&D company for contract security,
+firmware development, and systems research.
 
+- Engineered a declarative NixOS dual-WAN appliance (`nftables` default-deny and
+  client-isolation rules, automated WAN failover, Prometheus/Loki/Grafana
+  observability), a self-hosted AMD ROCm LLM stack, and a local webcam eye-gaze
+  tracker for Hyprland focus control.
 - Extended the Tock OS real-time operating system, built Rust hardware drivers
-  for wearable ARM and ESP devices, and implemented out-of-band Bluetooth
-  authentication schemes for embedded medical devices.
+  for wearable ARM/ESP devices, and implemented out-of-band Bluetooth
+  authentication for embedded medical devices.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
@@ -99,7 +104,7 @@ embedded-systems research.
   accompanying technology demonstrations.
 - Designed vulnerability mitigations for life-critical environments,
   reverse-engineered FreeRTOS, Zephyr, Tock, and Nordic SoftDevice deployments,
-  and performed static and dynamic analysis of proprietary ARM firmware.
+  and analyzed proprietary ARM firmware.
 - Developed attacks and embedded-system techniques for live purple-team and
   red-team exercises involving hospital ICS and power-grid targets alongside US
   Cyber Command and utility partners.
