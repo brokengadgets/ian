@@ -2,7 +2,7 @@
 name: "Ian Trent"
 title: "Senior Security Engineer | Security Platforms, Infrastructure & Automation"
 email: "ian@brokengadgets.io"
-phone: "+1 (681) 238-0204"
+phone: ""
 location: ""
 website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"
@@ -18,10 +18,10 @@ summary: >
 
 ## Technical Focus
 
-**Security:** Security platform architecture, endpoint protection (MDE/MDO/MDC),
-source-code & AI-agent security inspection, federated identity, zero-plaintext
-secrets management, threat modeling, ETW/ETL performance forensics, and
-embedded/firmware vulnerability research.
+**Security:** Security platform architecture, endpoint protection & migrations
+(CrowdStrike Falcon, MDE/MDO/MDC), source-code & AI-agent security inspection,
+federated identity, zero-plaintext secrets management, threat modeling, ETW/ETL
+performance forensics, and embedded/firmware vulnerability research.
 
 **Engineering:** Go, Rust, Python, C/C++, shell scripting, API & gateway design,
 multi-tenant CLI design, infrastructure as code, deterministic agent workflows,
@@ -45,13 +45,13 @@ Windows, and macOS.
   deny-by-default per-deployment RBAC, Azure UAMI managed identities, 1Password
   secret isolation, JWT re-verification, RFC 7807 structured errors, and
   upstream body-leakage prevention.
-- Built and shipped cross-platform endpoint-security tooling in Rust, Go, and
-  Python across Linux, Windows, and macOS estates—including a statically linked
-  Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
-  pipeline, an OpenTofu/KVM/libvirt dynamic-analysis lab for reverse engineering
-  EDR internals, a Windows ETW/ETL trace analyzer attributing Defender scan CPU
-  overhead to root processes, and a multi-tenant exclusions CLI with
-  merge-blocking integration tests.
+- Built and shipped cross-platform endpoint-security tooling and led large-scale
+  CrowdStrike Falcon and Microsoft Defender (MDE) fleet migrations in Rust, Go,
+  and Python across Linux, Windows, and macOS estates—including a statically
+  linked Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL), a
+  KVM/libvirt lab for reverse engineering EDR internals, a Windows ETW/ETL scan
+  CPU trace analyzer, and a multi-tenant exclusions CLI with merge-blocking
+  integration tests.
 - Unblocked a global Linux endpoint-security rollout across multiple business
   units by diagnosing and fixing a package-dependency failure that had crashed
   configuration management and halted fleet deployment.

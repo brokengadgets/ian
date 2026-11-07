@@ -2,7 +2,7 @@
 name: "Ian Trent"
 title: "Senior Security Engineer | Identity & Access Management (IAM)"
 email: "ian@brokengadgets.io"
-phone: "+1 (681) 238-0204"
+phone: ""
 location: ""
 website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"

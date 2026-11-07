@@ -2,7 +2,7 @@
 name: "Ian Trent"
 title: "Senior Security Engineer | Security Platforms, Infrastructure & Automation"
 email: "ian@brokengadgets.io"
-phone: "+1 (681) 238-0204"
+phone: ""
 location: ""
 website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"
@@ -58,13 +58,14 @@ Nmap, Splunk, and Azure DevOps.
   isolation, issue automation, observability, risk evaluation, and AI inference
   across Azure, Google Cloud, and hybrid on-premises data centers and
   subsidiary networks.
-- Built and shipped cross-platform endpoint-security tooling in Rust, Go, and
-  Python across Linux, Windows, and macOS estates—including a statically linked
-  Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
-  pipeline, a KVM/libvirt dynamic-analysis lab for studying EDR internals, a
-  Windows ETW/ETL trace analyzer attributing Defender scan overhead to root
-  processes, and a multi-tenant exclusions CLI with merge-blocking integration
-  tests.
+- Built and shipped cross-platform endpoint-security tooling and led
+  bidirectional CrowdStrike Falcon and Microsoft Defender (MDE) fleet
+  migrations in Rust, Go, and Python across Linux, Windows, and macOS
+  estates—including a statically linked Rust Linux onboarding installer
+  (`x86_64`/`aarch64` MUSL) and fleet-config pipeline, a KVM/libvirt
+  dynamic-analysis lab for studying EDR sensor internals, a Windows ETW/ETL
+  trace analyzer attributing scan overhead to root processes, and a
+  multi-tenant exclusions CLI with merge-blocking integration tests.
 - Unblocked a global Linux endpoint-security rollout across multiple business
   units by isolating and fixing a package-dependency failure that had crashed
   configuration management and halted fleet deployment.
@@ -182,28 +183,32 @@ research services, primarily for ARM Cortex platforms.
 - Coordinated delivery across Go handlers, gateways, SDKs, Terraform/Terragrunt
   modules, RBAC roles, templates, and architecture documentation.
 
-### Endpoint-security deployment and operations
+### Endpoint-security deployment, migrations, and operations
 
-- Engineered and operated Microsoft Defender for Endpoint (MDE) deployment,
-  policy automation, and diagnostics across Linux, Windows, and macOS estates
-  spanning globally distributed business units and acquired subsidiary networks.
-- Built a statically linked Rust Linux onboarding installer (`x86_64`/`aarch64`,
-  MUSL/GitHub release pipelines) with tenant-aware configuration, URL/JSON
-  validation, retry logic, and automated support-ticket integration.
-- Built a Windows ETW/ETL trace reader that attributes Defender scan duration
-  and CPU overhead to the originating process and extracts host/domain rundown
+- Engineered and operated cross-platform endpoint protection (CrowdStrike
+  Falcon and Microsoft Defender for Endpoint) deployment, bidirectional fleet
+  migrations, policy automation, and diagnostics across Linux, Windows, and
+  macOS estates spanning globally distributed business units and acquired
+  subsidiary networks.
+- Built a statically linked Rust Linux endpoint-security onboarding installer
+  (`x86_64`/`aarch64`, MUSL/GitHub release pipelines) with tenant-aware
+  configuration, URL/JSON validation, retry logic, and automated support-ticket
+  integration.
+- Built a Windows ETW/ETL trace reader that attributes scan duration and CPU
+  overhead to the originating process and extracts host/domain rundown
   telemetry for performance root-cause analysis.
 - Built an OpenTofu/KVM/libvirt software dynamic-analysis lab with isolated
-  network planes to inspect EDR internals, kernel/daemon behavior, tamper
-  protection, package-manager updates, and policy uptake prior to fleet rollout.
-- Unblocked a large enterprise Linux MDE onboarding program by diagnosing and
-  fixing a package-dependency failure that had interrupted configuration
-  management and halted new-host deployment.
+  network planes to inspect CrowdStrike and MDE sensor internals, kernel/daemon
+  behavior, tamper protection, package-manager updates, and policy uptake prior
+  to fleet rollout.
+- Unblocked a large enterprise Linux endpoint-security onboarding program by
+  diagnosing and fixing a package-dependency failure that had interrupted
+  configuration management and halted new-host deployment.
 - Built a multi-tenant endpoint-policy and exclusions CLI with testbed
   validation and merge-blocking integration tests.
 - Established deduplicated canonical-event telemetry across Slack, Jira, and M365
-  to measure MDE/MDO/MDC operational support load and separate steady-state
-  volume from mass-migration surges.
+  to measure endpoint-security (CrowdStrike/MDE/MDO/MDC) operational support
+  load and separate steady-state volume from mass-migration surges.
 
 ### AI-agent security, local inference, and deterministic engineering workflows
 

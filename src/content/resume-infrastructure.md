@@ -2,7 +2,7 @@
 name: "Ian Trent"
 title: "Senior Security Engineer | Infrastructure, Cloud & DevSecOps"
 email: "ian@brokengadgets.io"
-phone: "+1 (681) 238-0204"
+phone: ""
 location: ""
 website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"
@@ -21,8 +21,8 @@ Docker, Podman, libvirt, KVM, infrastructure as code, configuration management,
 and release engineering.
 
 **Cloud and delivery:** Azure, Google Cloud, Microsoft Graph, Sentinel, Cribl,
-GitHub Actions, Azure DevOps, CI/CD, containers, serverless workloads,
-event-driven systems, federated identity, networking, and observability.
+CrowdStrike Falcon, MDE/MDO/MDC, GitHub Actions, Azure DevOps, CI/CD,
+containers, serverless workloads, federated identity, and observability.
 
 **Engineering:** Go, Rust, Python, shell scripting, APIs, multi-tenant CLI
 design, automated testing, cross-platform tooling, and systems integration.
@@ -40,15 +40,15 @@ design, automated testing, cross-platform tooling, and systems integration.
   multi-service security platform across Azure, Google Cloud, and hybrid
   on-premises data centers and subsidiary networks using managed identities,
   1Password secret isolation, and deny-by-default RBAC.
-- Engineered cross-platform Microsoft Defender for Endpoint (MDE) deployment and
-  fleet automation across Linux, Windows, and macOS—including a statically linked
-  Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
-  pipeline, an OpenTofu/KVM/libvirt dynamic-analysis lab for inspecting EDR
-  internals, an ETW/ETL process-attribution trace analyzer, and a multi-tenant
-  exclusions CLI with merge-blocking integration tests.
-- Unblocked a multi-unit enterprise Linux MDE onboarding program by diagnosing
-  and fixing a package-dependency failure that had crashed configuration
-  management and halted fleet rollout.
+- Engineered cross-platform endpoint-security deployment, fleet automation, and
+  bidirectional CrowdStrike Falcon ↔ Microsoft Defender (MDE) migrations across
+  Linux, Windows, and macOS—including a statically linked Rust Linux onboarding
+  installer (`x86_64`/`aarch64` MUSL), an OpenTofu/KVM/libvirt lab for
+  inspecting EDR internals, an ETW/ETL process-attribution trace analyzer, and a
+  multi-tenant exclusions CLI with merge-blocking integration tests.
+- Unblocked a multi-unit enterprise Linux endpoint-security rollout by
+  diagnosing and fixing a package-dependency failure that had crashed
+  configuration management and halted fleet deployment.
 - Built a Go-based multi-org Git SSH and commit-signing identity router,
   multi-tenant Jira and Azure DevOps CLIs, and cloud control-plane remediation
   workflows for exposed-credential purges and multi-board service recovery.
@@ -60,8 +60,8 @@ design, automated testing, cross-platform tooling, and systems integration.
   credential-isolating gateway and rewrote a serverless cloud bucket-proxy
   function in Go for substantially faster runtime execution and lower toil.
 - Established deduplicated canonical-event telemetry across Slack, Jira, and M365
-  to measure MDE/MDO/MDC operational support load and separate steady-state
-  volume from mass-migration surges.
+  to measure endpoint-security (CrowdStrike/MDE/MDO/MDC) support load and
+  separate steady-state volume from mass-migration surges.
 
 <p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
 

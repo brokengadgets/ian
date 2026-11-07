@@ -2,7 +2,7 @@
 name: "Ian Trent"
 title: "Senior Security Engineer | Software & Platform Engineering"
 email: "ian@brokengadgets.io"
-phone: "+1 (681) 238-0204"
+phone: ""
 location: ""
 website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"
@@ -45,9 +45,9 @@ workloads, observability, artifact management, and event-driven systems.
   bounded read-only reconciliation for uncertain writes, and zero-I/O boundary
   guards.
 - Authored a Go-based Git SSH and commit-signing identity router, a statically
-  linked Rust Linux MDE onboarding installer (`x86_64`/`aarch64` MUSL builds),
-  a Windows ETW/ETL process-attribution trace reader, and a standard-library-only
-  Go CLI for local quantized LLM evaluation.
+  linked Rust Linux endpoint-security onboarding installer (`x86_64`/`aarch64`
+  MUSL builds), a Windows ETW/ETL process-attribution trace reader, and a
+  standard-library-only Go CLI for local quantized LLM evaluation.
 - Rewrote a legacy serverless bucket-proxy function in Go for substantially
   faster execution and improved CI/CD with multi-architecture release matrices,
   merge-blocking integration suites, and staged promotion gates.
@@ -68,9 +68,9 @@ workloads, observability, artifact management, and event-driven systems.
   deterministic scoring rules, soak testing, and reason-code telemetry, plus a
   policy-aware ticket and incident dispatcher.
 - Built a multi-tenant endpoint-policy and exclusions CLI with testbed
-  validation and merge-blocking integration tests, and an OpenTofu/KVM/libvirt
-  dynamic-analysis lab for inspecting EDR kernel/daemon behavior and tamper
-  protection.
+  validation and merge-blocking integration tests supporting CrowdStrike Falcon
+  and Microsoft Defender (MDE) migrations, and an OpenTofu/KVM/libvirt
+  dynamic-analysis lab for inspecting sensor kernel/daemon behavior.
 - Consolidated Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl logging
   pipelines under federated identity and staged promotion guardrails, and
   designed a Google Cloud to on-premises bridge decoupling platform transport
