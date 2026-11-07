@@ -2,7 +2,7 @@
 name: "Ian Trent"
 title: "Senior Security Engineer | Application & Product Security"
 email: "ian@brokengadgets.io"
-phone: "+1 (681) 238-0204"
+phone: ""
 location: ""
 website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"
@@ -55,8 +55,9 @@ Snort, Nmap, and Splunk.
   dispatch, bounded read-only reconciliation for uncertain writes, and strict
   redirect/origin/payload validation boundaries.
 - Built a multi-tenant endpoint-policy and exclusions CLI with testbed
-  validation and merge-blocking integration tests, plus an OpenTofu/KVM/libvirt
-  dynamic-analysis lab for reverse engineering EDR internals.
+  validation and merge-blocking integration tests supporting CrowdStrike Falcon
+  and Microsoft Defender (MDE) fleet migrations, plus an OpenTofu/KVM/libvirt
+  dynamic-analysis lab for reverse engineering EDR sensor internals.
 - Fixed and production-deployed a weak-randomness defect in an automated
   ticket-routing service and recovered a multi-board workflow outage, rotating
   affected service credentials during the recovery window.
@@ -67,7 +68,7 @@ Snort, Nmap, and Splunk.
   for AI coding agents with explicit phase gates, adversarial challenge passes,
   formal acceptance-criteria validation backpressure, and holdout-isolated
   verification, plus a local-first Go CLI for quantized LLM boundary checks.
-- Built a statically linked Rust Linux MDE onboarding installer
+- Built a statically linked Rust Linux endpoint-security onboarding installer
   (`x86_64`/`aarch64` MUSL) with strict URL/JSON validation and retry logic,
   unblocked a global Linux endpoint rollout by fixing a package-dependency
   failure, and consolidated Defender-as-Code and Sentinel/Cribl logging under
