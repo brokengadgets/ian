@@ -123,6 +123,11 @@ html, body {
   border-bottom-color: var(--accent);
 }
 
+/* Continued role heading: hidden on scrolling web page, shown on paged/print exports */
+.continued-heading {
+  display: none;
+}
+
 /* Dark mode for screen reading; print and PDF always use light. */
 @media (prefers-color-scheme: dark) {
   :root {

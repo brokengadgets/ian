@@ -41,48 +41,85 @@ Windows, and macOS.
   isolation, issue automation, observability, risk evaluation, and AI inference
   across Azure, Google Cloud, and hybrid on-premises data centers and
   subsidiary networks.
+- Designed and rolled out an identity-aware AI-inference gateway with
+  deny-by-default per-deployment RBAC, Azure UAMI managed identities, 1Password
+  secret isolation, JWT re-verification, RFC 7807 structured errors, and
+  upstream body-leakage prevention.
 - Built and shipped cross-platform endpoint-security tooling in Rust, Go, and
   Python across Linux, Windows, and macOS estates—including a statically linked
   Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config
-  pipeline, a KVM/libvirt dynamic-analysis lab for reverse engineering EDR
-  internals, an ETW/ETL trace analyzer attributing Defender scan CPU overhead to
-  root processes, and a multi-tenant exclusions CLI with merge-blocking
-  integration tests.
+  pipeline, an OpenTofu/KVM/libvirt dynamic-analysis lab for reverse engineering
+  EDR internals, a Windows ETW/ETL trace analyzer attributing Defender scan CPU
+  overhead to root processes, and a multi-tenant exclusions CLI with
+  merge-blocking integration tests.
 - Unblocked a global Linux endpoint-security rollout across multiple business
-  units by diagnosing and fixing a package-dependency failure that had halted
-  configuration management and fleet deployment.
-- Created a polyglot source-security inspector, a deterministic
-  Analyze → Implement → Review AI-agent orchestration framework, and a
-  local-first Go LLM quantization evaluator with strict runtime boundary checks.
-- Engineered multi-tenant Jira and Azure DevOps automation CLIs, a Go-based
-  multi-org Git SSH and commit-signing identity router, and a fail-closed
-  security support bot with durable request ledgers and zero plaintext secret
-  storage.
+  units by diagnosing and fixing a package-dependency failure that had crashed
+  configuration management and halted fleet deployment.
+- Created a polyglot source-security inspector covering Go, Python,
+  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces, a
+  deterministic Analyze → Implement → Review AI-agent orchestration framework,
+  and a local-first Go LLM quantization evaluator with strict runtime boundary
+  checks.
+- Engineered multi-tenant Jira and Azure DevOps automation CLIs with
+  1Password-injected auth and offline-tested blueprints, plus a Go-based
+  multi-org Git SSH and commit-signing identity router across personal and
+  enterprise GitHub EMU tenants.
 - Consolidated Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl logging
-  into a unified Security Platform-as-Code pipeline with federated identity, and
-  led cloud credential-exposure incident response and blameless postmortems.
+  into a unified Security Platform-as-Code pipeline with federated identity,
+  subscription-less MS Graph plan scoping, and automated cloud-identity
+  hand-back receivers.
+
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+
+- Built a fail-closed security support bot and policy-aware ticket/incident
+  dispatcher featuring durable request ledgers, confirmed-ticket-before-work
+  gating, and bounded read-only reconciliation for uncertain writes, plus an
+  explainable risk-evaluation service with automated enrichment, deterministic
+  scoring, soak testing, and reason-code telemetry.
+- Designed a Google Cloud to on-premises bridge with least-privilege IAM,
+  artifact controls, and observability, rewrote a serverless cloud function in
+  Go for substantially faster execution, led cloud AI credential-exposure
+  incident response and postmortems, and established MDE/MDO/MDC support-load
+  telemetry across Slack, Jira, and M365.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting company used for contract security, firmware development,
-and embedded-systems research work.
+Maintain a consulting company for contract security, firmware development, and
+embedded-systems research.
+
+- Extended the Tock OS real-time operating system, built Rust hardware drivers
+  for wearable ARM and ESP devices, and implemented out-of-band Bluetooth
+  authentication schemes for embedded medical devices.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
 
 - Led security researchers delivering three DARPA SLCS research papers and
-  technology demonstrations.
-- Designed vulnerability mitigations, performed static and dynamic ARM-firmware
-  analysis, and maintained Azure DevOps build and test pipelines.
-- Developed techniques for live purple-team and red-team exercises involving
-  hospital ICS and power-grid targets.
+  accompanying technology demonstrations.
+- Designed vulnerability mitigations for life-critical environments,
+  reverse-engineered FreeRTOS, Zephyr, Tock, and Nordic SoftDevice deployments,
+  and performed static and dynamic analysis of proprietary ARM firmware.
+- Developed attacks and embedded-system techniques for live purple-team and
+  red-team exercises involving hospital ICS and power-grid targets alongside US
+  Cyber Command and utility partners.
+- Deployed source- and binary-based coverage-guided fuzzers, supplied live
+  attack traffic for web-application detection ML models, and maintained Docker
+  and Azure DevOps CI/CD pipelines.
 
 ### Hack All the Things, LLC — Principal Courseware Developer
 *April 2015–October 2019*
 
-Developed and taught cybersecurity workshops covering Linux security, network
-attacks, industrial-control systems, SQL injection, and incident response.
+- Developed, tested, and taught cybersecurity workshops for professional and DoD
+  audiences covering Linux-kernel customization, ARP-poisoning detection,
+  advanced iptables, BACnet ICS red teaming, SQL injection, and incident response.
+
+### Mindful Behavioral Healthcare — Network Administrator
+*April 2016–June 2018*
+
+- Operated a three-building medical-campus network serving 150+ staff across
+  Linux, Windows, macOS, and mobile endpoints; integrated OAuth2 SSO, cloud EMR
+  systems, MySQL/SQLite, vulnerability management, and edge/internal firewalls.
 
 ## Selected Strengths
 
