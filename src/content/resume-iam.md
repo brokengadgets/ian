@@ -41,16 +41,17 @@ Users (EMU), GitHub Actions, and Azure DevOps.
   a shared multi-service security platform—enforcing managed-identity
   authentication (Azure UAMI), JWT re-verification, and deny-by-default
   per-endpoint and per-deployment RBAC across cloud and on-premises boundaries.
-- Built a Go-based Git SSH and commit-signing identity router that
-  transparently resolves SSH authentication keys and cryptographic signing
-  identities across personal and multiple GitHub Enterprise Managed User (EMU)
+- Built a Go-based Git SSH and commit-signing identity router and GitHub EMU
+  repository migrator that transparently resolve SSH authentication keys and
+  cryptographic signing identities across personal and multiple enterprise
   organizations without URL rewrites or host aliases.
 - Engineered multi-tenant Jira and Azure DevOps CLIs and background auth agents
   that eliminate plaintext PAT storage and CLI token flags, resolving
   credentials exclusively at runtime via 1Password secret references.
-- Designed automated cloud-identity hand-back receivers, landing-zone IAM role
-  bootstrapping, and subscription-less Microsoft Graph plan scoping to unify
-  Defender-as-Code and security-logging pipelines under federated identity.
+- Consulted on and built prototypes for unifying Defender-as-Code (MS
+  Graph/Intune) and security-logging pipelines—including automated
+  cloud-identity hand-back receivers, landing-zone IAM role bootstrapping, and
+  subscription-less Microsoft Graph plan scoping under federated identity.
 - Evaluated third-party Microsoft Graph and Entra ID permission footprints
   (PIM, Conditional Access, directory roles, and app consent) and produced
   zero-trust access troubleshooting guides and live debugging workshops.
@@ -69,8 +70,8 @@ Users (EMU), GitHub Actions, and Azure DevOps.
   synchronous completion routing, Azure UAMI managed identities, 1Password-isolated
   external provider keys, JWT re-verification, RFC 7807 error sanitization, and
   upstream body-leakage prevention.
-- Built a fail-closed security support bot and policy-aware ticket/incident
-  dispatcher enforcing least-privilege service identities, durable request
+- Built a fail-closed security support bot and Azure DevOps event-worker
+  pipeline enforcing least-privilege service identities, durable request
   ledgers, confirmed-ticket-before-work gating, and bounded read-only
   reconciliation for uncertain mutations, plus an explainable risk-evaluation
   service with reason-code telemetry.
@@ -78,12 +79,15 @@ Users (EMU), GitHub Actions, and Azure DevOps.
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting company for contract security, firmware development, and
-embedded-systems research.
+Maintain a consulting and independent R&D company for contract security,
+firmware development, and systems research.
 
+- Engineered a declarative NixOS dual-WAN appliance enforcing default-deny
+  `nftables` WAN anti-management filters, strict per-subnet LAN client
+  isolation, and loopback-bound observability.
 - Consulted on embedded medical-device cybersecurity, implemented out-of-band
-  Bluetooth Low Energy authentication schemes, and extended the Tock OS
-  real-time operating system with hardware-isolated Rust drivers.
+  Bluetooth Low Energy authentication, and extended Tock OS with
+  hardware-isolated Rust drivers.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
@@ -94,10 +98,10 @@ embedded-systems research.
   accompanying technology demonstrations and wrote federal OTA proposals.
 - Designed vulnerability mitigations for life-critical systems, reverse-engineered
   FreeRTOS, Zephyr, Tock, and Nordic SoftDevice deployments, and maintained
-  authenticated Azure DevOps and Docker build/test pipelines.
+  authenticated Azure DevOps and Docker CI/CD pipelines.
 - Developed embedded-system techniques for live purple-team and red-team
   exercises involving hospital ICS and power-grid targets alongside US Cyber
-  Command, power providers, and hospital ICS staff.
+  Command and utility partners.
 
 ### Hack All the Things, LLC — Principal Courseware Developer
 *April 2015–October 2019*

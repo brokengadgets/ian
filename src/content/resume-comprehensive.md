@@ -69,20 +69,22 @@ Nmap, Splunk, and Azure DevOps.
 - Unblocked a global Linux endpoint-security rollout across multiple business
   units by isolating and fixing a package-dependency failure that had crashed
   configuration management and halted fleet deployment.
-- Created a polyglot source-security inspector and a deterministic
-  Analyze → Implement → Review AI-agent orchestration framework with
-  explicit phase gates, dependency-aware task graphs, and formal acceptance-criteria
-  validation backpressure.
+- Co-developed a polyglot source-security inspector, contributed companion
+  tutoring/assessment skills (`teach-me`, `quiz-me`) and WSL/PowerShell
+  installer fixes to a deterministic Analyze → Implement → Review AI-agent
+  orchestration framework, and contributed EXL2/AWQ runtime boundary checks to a
+  Go LLM quantization evaluator.
 - Engineered multi-tenant Jira and Azure DevOps automation CLIs and an
   event-driven security support-bot architecture featuring zero plaintext PAT
   storage (1Password-injected auth), blueprint execution, idempotent request
   ledgers, and uncertain-write reconciliation.
-- Authored a Go-based Git SSH and commit-signing identity router that
-  transparently resolves credentials across personal and multi-org enterprise
-  GitHub EMU tenants without URL rewrites.
-- Led Security Platform-as-Code consolidation unifying Defender-as-Code
-  (Microsoft Graph/Intune) and Sentinel/Cribl logging pipelines under federated
-  identity and staged promotion guardrails.
+- Authored a Go-based Git SSH and commit-signing identity router and GitHub EMU
+  repository migrator that transparently resolve credentials across personal and
+  multi-org enterprise tenants without URL rewrites.
+- Consulted on and built Terraform/Terragrunt prototypes for Security
+  Platform-as-Code consolidation unifying Defender-as-Code (Microsoft
+  Graph/Intune) and Sentinel/Cribl logging pipelines under federated identity
+  and staged promotion guardrails.
 - Drove incident response, blameless postmortems, and fleet support baselines—
   executing cloud control-plane purges for exposed AI credentials, recovering
   multi-board automation outages, and turning recurring architecture reviews
@@ -101,6 +103,15 @@ Provided on-demand security-oriented firmware development and embedded-systems
 research services, primarily for ARM Cortex platforms.
 
 - Planned and developed expansions to the Tock OS real-time operating system.
+- Engineered a declarative NixOS dual-WAN router and firewall appliance on PC
+  Engines APU4D4 hardware with default-deny `nftables` WAN filters, strict L3
+  client isolation, automated WAN failover, and local Prometheus/Loki/Grafana
+  observability.
+- Built a self-hosted AMD ROCm local LLM inference stack (`llama.cpp` with flash
+  attention and Q8 KV cache fronted by an Anthropic-compatible LiteLLM proxy), a
+  deterministic Go gameplay CLI and evaluation harness for *Cultist Simulator*,
+  a browser-only Go/WebAssembly save-file editor, and a local webcam iris-gaze
+  daemon driving Hyprland window focus.
 - Developed and reported on radio-propagation trials across UHF bands,
   including Wi-Fi, Bluetooth Low Energy, 433 MHz, and 315 MHz.
 - Built graphical interfaces and Rust hardware drivers for wearable ARM and ESP
@@ -176,10 +187,11 @@ research services, primarily for ARM Cortex platforms.
 - Designed a Google Cloud to on-premises bridge with least-privilege IAM,
   artifact controls, and observability that decoupled generalized platform
   transport from environment-specific legacy dependencies.
-- Consolidated Defender-as-Code (Microsoft Graph/Intune) and Sentinel/Cribl
-  security-logging pipelines into a unified Security Platform-as-Code lifecycle
-  (`PR → validate → plan → approve → staged deploy → verify`) with subscription-less
-  MS Graph plan scoping and automated cloud-identity hand-back receivers.
+- Consulted on and built prototypes to consolidate Defender-as-Code (Microsoft
+  Graph/Intune) and Sentinel/Cribl security-logging pipelines into a unified
+  Security Platform-as-Code lifecycle (`PR → validate → plan → approve → staged deploy → verify`)
+  with subscription-less MS Graph plan scoping and automated cloud-identity
+  hand-back receivers.
 - Coordinated delivery across Go handlers, gateways, SDKs, Terraform/Terragrunt
   modules, RBAC roles, templates, and architecture documentation.
 
@@ -212,22 +224,23 @@ research services, primarily for ARM Cortex platforms.
 
 ### AI-agent security, local inference, and deterministic engineering workflows
 
-- Built a polyglot source-security inspector that detects hazardous
+- Co-developed a polyglot source-security inspector that detects hazardous
   code patterns and antipatterns across Go, Python, TypeScript/JavaScript,
-  PowerShell, Terraform, and AI-agent configuration surfaces, complete with
-  parser hardening, canonical-path enforcement, and EDR-safe release packaging.
-- Created a deterministic Analyze → Implement → Review orchestration framework
-  for AI coding agents featuring explicit phase gates, dependency-aware
-  task graphs, adversarial challenge passes, formal acceptance-criteria
-  backpressure, and holdout-isolated verification.
-- Built a local-first, standard-library-only Go CLI for hardware-aware
-  quantized LLM evaluation and runtime boundary verification across GGUF/llama.cpp,
-  AWQ, and EXL2 artifacts without hidden network egress or telemetry.
-- Contributed C/C++ Wayland fractional-scaling, buffer-scale, and Vulkan
-  window-surface state fixes to Blender on Linux.
+  PowerShell, Terraform, and AI-agent configuration surfaces—authoring
+  vulnerability corpora, agent-file validators, PowerShell canonical-path
+  symlink hardening, and EDR-safe release packaging.
+- Contributed repository-grounded tutoring and assessment skills (`teach-me`,
+  `quiz-me`) and cross-platform WSL/PowerShell installer fixes to a
+  deterministic Analyze → Implement → Review orchestration framework for AI
+  coding agents.
+- Contributed EXL2/AWQ subprocess input hardening, regular-file boundary
+  verification, calibration dataset validators, and Pi agent configuration
+  helpers to a local-first Go CLI for quantized LLM evaluation.
+- Contributed compositor regression tests (bilateral blur, glare streaks, keying
+  screen, mask/pixelate/group nodes) to upstream Blender.
 - Shipped a cross-platform architecture, reliability, and operations advisor
-  packaged across GitHub Copilot, Claude Code, Codex, and Pi on Linux, macOS,
-  Windows, and WSL to evaluate SRE readiness, lifecycle ownership, tenant
+  (`ARIA`) packaged across GitHub Copilot, Claude Code, Codex, and Pi on Linux,
+  macOS, Windows, and WSL to evaluate SRE readiness, lifecycle ownership, tenant
   boundaries, and operational toil.
 
 ### Issue-management, support-bot, and risk-evaluation automation
@@ -240,9 +253,9 @@ research services, primarily for ARM Cortex platforms.
   integration featuring a durable request/event/operation ledger,
   confirmed-ticket-before-work gating, bounded read-only reconciliation for
   uncertain mutations, and cross-platform artifact packaging.
-- Launched a policy-aware ticket and incident dispatcher monitoring collaboration
-  channels to classify requests, enforce organizational ticket-writing standards,
-  and route work into issue trackers with full infrastructure-as-code and RBAC.
+- Contributed to a policy-aware ticket and incident dispatcher by hardening JSON
+  field extraction, Jira/GoJira timeout handling, and staffing-capacity routing
+  rules across collaboration channels.
 - Evolved firewall and security-approval workflows from manual review into an
   explainable risk-evaluation service with real-ticket integration, soak testing,
   production promotion, and metrics by outcome, failure mode, and reason code.
