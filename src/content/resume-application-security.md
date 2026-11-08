@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | Application & Product Security"
+title: "Security Engineer | Application & Product Security"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -31,48 +31,54 @@ Snort, Nmap, and Splunk.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Co-developed a polyglot static-inspection and security-review engine covering
-  Go, Python, TypeScript/JavaScript, PowerShell, Terraform, and AI-agent
-  skill/prompt surfaces—expanding vulnerability corpora, agent-file validators,
-  and EDR-safe release bundles.
-- Hardened PowerShell canonical path symlink resolution, EXL2/AWQ subprocess
-  execution boundaries, and regular-file verification in internal security and
-  LLM quantization tooling.
-- Designed and rolled out an identity-aware AI-inference gateway with
-  deny-by-default per-deployment RBAC, JWT re-verification, 1Password secret
-  isolation, RFC 7807 error sanitization, and upstream body-leakage prevention.
-- Authored a Go-based Git SSH and commit-signing identity router and
-  zero-plaintext CLI authentication architectures that eliminate raw PAT flags
-  and credential sprawl across enterprise GitHub EMU and cloud tenants.
-- Evolved manual firewall and architecture reviews into an explainable
-  risk-evaluation service with automated enrichment, deterministic scoring, soak
-  testing, and reason-code telemetry, and led cloud key-exposure incident
-  response and postmortems.
-- Engineered a fail-closed security support bot and Azure DevOps adapter
-  featuring a durable request/event/operation ledger, at-most-once mutation
-  dispatch, bounded read-only reconciliation for uncertain writes, and strict
-  redirect/origin/payload validation boundaries.
-- Built a multi-tenant endpoint-policy and exclusions CLI with testbed
-  validation and merge-blocking integration tests supporting CrowdStrike Falcon
-  and Microsoft Defender (MDE) fleet migrations, plus an OpenTofu/KVM/libvirt
-  dynamic-analysis lab for reverse engineering EDR sensor internals.
-- Fixed and production-deployed a weak-randomness defect in an automated
-  ticket-routing service and recovered a multi-board workflow outage, rotating
-  affected service credentials during the recovery window.
+- Shifted vulnerability detection left across developer and AI-agent workflows
+  by conceiving and building a polyglot static-inspection and security-review
+  engine covering Go, Python, TypeScript/JavaScript, PowerShell, Terraform, and
+  agent skill/prompt surfaces—expanding vulnerability corpora, agent-file
+  validators, and EDR-safe release bundles.
+- Closed path-traversal and command-injection classes in internal security and
+  LLM quantization tooling by hardening PowerShell canonical-path symlink
+  resolution, EXL2/AWQ subprocess execution boundaries, and regular-file
+  verification.
+- Enabled safe enterprise LLM adoption by designing and rolling out an
+  identity-aware AI-inference gateway with deny-by-default per-deployment RBAC,
+  JWT re-verification, 1Password secret isolation, RFC 7807 error sanitization,
+  and upstream body-leakage prevention.
+- Eliminated plaintext developer tokens and identity misconfigurations across
+  personal and enterprise GitHub EMU and cloud tenants by authoring a Go Git SSH
+  and commit-signing identity router, an EMU repository migrator, and
+  1Password-backed Jira/Azure DevOps CLI auth agents.
+- Replaced manual firewall and architecture reviews with explainable,
+  audit-ready automation—shipping a deterministic risk-evaluation service with
+  soak testing and reason-code telemetry, and leading cloud key-exposure
+  incident response and postmortems.
+- Prevented duplicate mutations and unverified external writes in security
+  operations by engineering a fail-closed support bot and Azure DevOps adapter
+  with a durable request ledger, at-most-once dispatch, bounded uncertain-write
+  reconciliation, and strict redirect/origin/payload validation boundaries.
+- Completed the enterprise transition to CrowdStrike Falcon, operated Falcon
+  across global fleets, and subsequently executed a rapid cutover to Microsoft
+  Defender for Endpoint (MDE)—building a multi-tenant exclusions CLI with
+  merge-blocking integration tests and an OpenTofu/KVM/libvirt lab for reverse
+  engineering EDR sensor internals.
+- Repeatedly unblocked stalled security deployments, configuration management
+  pipelines, and production automation workflows across business units—isolating
+  and fixing root-cause package-dependency, weak-randomness, permission, and
+  multi-board service failures.
 
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Contributed repository-grounded tutoring and assessment skills (`teach-me`,
-  `quiz-me`) and cross-platform installer validation to a deterministic AI-agent
-  orchestration framework, and authored an architecture and operational-risk
-  advisor (`ARIA`).
-- Built a statically linked Rust Linux endpoint-security onboarding installer
-  (`x86_64`/`aarch64` MUSL) with strict URL/JSON validation and retry logic,
-  unblocked a global Linux endpoint rollout by fixing a package-dependency
-  failure, and prototyped Defender-as-Code and Sentinel/Cribl unification.
+- Improved architectural sustainability and deterministic AI-agent delivery by
+  authoring an operational-risk advisor and contributing repository-grounded
+  tutoring/assessment workflows and cross-platform installer validation to an
+  AI-agent orchestration framework.
+- Standardized Linux endpoint onboarding and reduced policy drift across studios
+  by building a statically linked Rust onboarding installer (`x86_64`/`aarch64`
+  MUSL) with strict URL/JSON validation and retry logic, and prototyping
+  Defender-as-Code and Sentinel/Cribl unification.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
