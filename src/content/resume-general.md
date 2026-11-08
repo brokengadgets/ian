@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | Security Platforms, Infrastructure & Automation"
+title: "Security Engineer | Security Platforms, Infrastructure & Automation"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -33,55 +33,53 @@ Windows, and macOS.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Architected and evolved a shared multi-service security platform spanning
-  managed-identity authentication, deny-by-default authorization, secret
-  isolation, issue automation, observability, risk evaluation, and AI inference
-  across Azure, Google Cloud, and hybrid on-premises data centers and
-  subsidiary networks.
-- Designed and rolled out an identity-aware AI-inference gateway with
-  deny-by-default per-deployment RBAC, Azure UAMI managed identities, 1Password
-  secret isolation, JWT re-verification, RFC 7807 structured errors, and
-  upstream body-leakage prevention.
-- Built and shipped cross-platform endpoint-security tooling and led large-scale
-  CrowdStrike Falcon and Microsoft Defender (MDE) fleet migrations in Rust, Go,
-  and Python across Linux, Windows, and macOS estates—including a statically
-  linked Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL), a
-  KVM/libvirt lab for reverse engineering EDR internals, a Windows ETW/ETL scan
-  CPU trace analyzer, and a multi-tenant exclusions CLI with merge-blocking
-  integration tests.
-- Unblocked a global Linux endpoint-security rollout across multiple business
-  units by diagnosing and fixing a package-dependency failure that had crashed
-  configuration management and halted rollout.
-- Co-developed a polyglot source-security inspector covering Go, Python,
-  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces,
-  contributed companion tutoring/assessment skills (`teach-me`, `quiz-me`) and
-  WSL/PowerShell installer fixes to a deterministic AI-agent orchestration
-  framework, and contributed runtime boundary checks to a Go LLM quantization
-  evaluator.
-- Engineered multi-tenant Jira and Azure DevOps automation CLIs with
-  1Password-injected auth and offline-tested blueprints, plus a Go-based
-  multi-org Git SSH and commit-signing identity router and GitHub EMU repository
-  migrator.
-- Consulted on and built prototypes for unifying Defender-as-Code (MS
-  Graph/Intune) and Sentinel/Cribl logging into a consolidated Security
-  Platform-as-Code operating model with federated identity and subscription-less
-  MS Graph plan scoping.
+- Transformed fragmented internal security projects into a cohesive,
+  high-trust platform across Azure, Google Cloud, and hybrid subsidiary
+  networks—standardizing managed-identity authentication, deny-by-default
+  authorization, secret isolation, observability, risk evaluation, and AI
+  inference.
+- Enabled safe, self-service adoption of enterprise LLMs by designing and
+  rolling out an identity-aware AI-inference gateway with deny-by-default
+  per-deployment RBAC, Azure UAMI managed identities, 1Password secret
+  isolation, JWT re-verification, and upstream body-leakage prevention.
+- Completed the enterprise rollout to CrowdStrike Falcon, operated the Falcon
+  stack across Linux, Windows, and macOS for multiple years, and then executed a
+  rapid fleet migration to Microsoft Defender for Endpoint (MDE)—building a
+  statically linked Rust Linux onboarding installer (`x86_64`/`aarch64` MUSL), a
+  KVM/libvirt EDR analysis lab, a Windows ETW/ETL scan CPU trace analyzer, and a
+  multi-tenant exclusions CLI to sustain MDE operations at scale.
+- Repeatedly unblocked stalled enterprise security rollouts, configuration
+  management pipelines, and production workflows across business units by
+  diagnosing and resolving root-cause package-dependency, kernel/sensor,
+  permission, and runtime failures across diverse fleet environments.
+- Shifted code and AI-agent security left by conceiving and building a polyglot
+  source-security inspector (Go, Python, TypeScript/JavaScript, PowerShell,
+  Terraform, agent surfaces), while contributing tutoring/assessment skills
+  (`teach-me`, `quiz-me`), WSL/PowerShell installer fixes, and runtime boundary
+  checks to internal AI orchestration and LLM quantization tools.
+- Eliminated credential sprawl and manual ticket toil across personal and
+  multi-org GitHub EMU and cloud tenants by engineering 1Password-backed
+  multi-tenant Jira and Azure DevOps CLIs, a Go Git SSH and commit-signing
+  identity router, and an EMU repository migrator.
+- Reduced long-term platform drift by consulting on and prototyping a unified
+  Security Platform-as-Code operating model consolidating Defender-as-Code (MS
+  Graph/Intune) and Sentinel/Cribl logging under federated identity and
+  subscription-less MS Graph plan scoping.
 
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Built a fail-closed security support bot and Azure DevOps event-worker
-  pipeline featuring durable request ledgers, confirmed-ticket-before-work
-  gating, and bounded read-only reconciliation for uncertain writes, plus an
-  explainable risk-evaluation service with automated enrichment, deterministic
-  scoring, soak testing, and reason-code telemetry.
-- Designed a Google Cloud to on-premises bridge with least-privilege IAM,
-  artifact controls, and observability, rewrote a serverless cloud function in
-  Go for substantially faster execution, led cloud AI credential-exposure
-  incident response and postmortems, and established MDE/MDO/MDC support-load
-  telemetry across Slack, Jira, and M365.
+- Replaced manual firewall reviews and ad-hoc support intake with explainable,
+  audit-ready automation—shipping a deterministic risk-evaluation service with
+  soak testing and reason-code telemetry, and a fail-closed support bot with
+  durable request ledgers and bounded uncertain-write reconciliation.
+- Decoupled generalized cloud platform transport from legacy on-premises
+  dependencies via a least-privilege Google Cloud bridge, cut serverless proxy
+  latency and toil by rewriting a cloud function in Go, led cloud AI
+  credential-exposure incident response, and established deduplicated
+  CrowdStrike/MDE/MDO/MDC support-load telemetry.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*

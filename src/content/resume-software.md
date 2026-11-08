@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | Software & Platform Engineering"
+title: "Security Engineer | Software & Platform Engineering"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -30,49 +30,56 @@ workloads, observability, artifact management, and event-driven systems.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Architected and evolved a shared multi-service platform spanning
-  managed-identity authentication, deny-by-default authorization, secret
-  isolation, issue tracking, observability, risk evaluation, and AI inference,
-  with Go handler templates, JWT re-verification, and RFC 7807 structured errors.
-- Engineered multi-tenant Jira and Azure DevOps CLIs with 1Password-backed
-  credential isolation, background auth agents, Markdown/Wiki/ADF document
-  converters, and offline-tested blueprints.
-- Built a fail-closed security support-bot and Azure DevOps adapter featuring a
+- Transformed a collection of internal security projects into a cohesive
+  multi-service platform spanning authentication, deny-by-default authorization,
+  secret isolation, issue tracking, observability, risk evaluation, and AI
+  inference—shipping reusable Go handler templates, JWT re-verification, and
+  RFC 7807 structured error contracts.
+- Eliminated plaintext token storage and repetitive ticket toil across
+  enterprise tenants by engineering multi-tenant Jira and Azure DevOps CLIs with
+  1Password-backed credential isolation, background auth agents,
+  Markdown/Wiki/ADF document converters, and offline-tested blueprints.
+- Prevented duplicate state mutations and unverified external writes by building
+  a fail-closed security support-bot and Azure DevOps adapter featuring a
   durable request/event/operation ledger, at-most-once mutation dispatch,
-  bounded read-only reconciliation for uncertain writes, and zero-I/O boundary
-  guards.
-- Authored a Go-based Git SSH and commit-signing identity router and GitHub EMU
-  repository migrator, a statically linked Rust Linux endpoint-security
-  onboarding installer (`x86_64`/`aarch64` MUSL builds), and a Windows ETW/ETL
-  process-attribution trace reader.
-- Rewrote a legacy serverless bucket-proxy function in Go for substantially
-  faster execution and improved CI/CD with multi-architecture release matrices,
-  merge-blocking integration suites, and staged promotion gates.
-- Co-developed a polyglot source-security inspector covering Go, Python,
-  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent surfaces,
-  contributed EXL2/AWQ subprocess boundary checks to a Go LLM quantization CLI,
-  and contributed companion skills (`teach-me`, `quiz-me`) and WSL/PowerShell
-  installer fixes to an AI-agent orchestration framework.
-- Contributed compositor regression tests (bilateral blur, glare streaks, keying
-  screen, mask/pixelate/group nodes) to upstream Blender.
-- Unblocked a multi-unit Linux endpoint-security rollout by isolating and fixing
-  a package-dependency failure that had crashed configuration management, and
-  fixed a production randomness defect in an automated ticket-routing service.
+  bounded read-only reconciliation, and zero-I/O boundary guards.
+- Removed developer identity friction and manual fleet diagnostics by authoring
+  a Go Git SSH and commit-signing identity router, a GitHub EMU repository
+  migrator, a statically linked Rust Linux endpoint onboarding installer
+  (`x86_64`/`aarch64` MUSL), and a Windows ETW/ETL process-attribution trace
+  reader.
+- Cut serverless latency and deployment risk by rewriting a legacy cloud
+  bucket-proxy function in Go and hardening CI/CD pipelines with
+  multi-architecture release matrices, merge-blocking integration suites, and
+  staged promotion gates.
+- Shifted code and AI-agent security left by conceiving and building a polyglot
+  source-security inspector (Go, Python, TypeScript/JavaScript, PowerShell,
+  Terraform, agent surfaces), while contributing EXL2/AWQ subprocess boundary
+  checks to a Go LLM quantization CLI and companion skills (`teach-me`,
+  `quiz-me`) and WSL/PowerShell installer fixes to an AI-agent framework.
+- Improved upstream open-source rendering reliability by contributing compositor
+  regression tests (bilateral blur, glare streaks, keying screen, and
+  mask/pixelate/group nodes) to Blender.
+- Repeatedly unblocked stalled enterprise security deployments, configuration
+  management pipelines, and production automation services across business units
+  by isolating and fixing root-cause package-dependency, weak-randomness,
+  permission, and runtime defects.
 
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Evolved manual firewall and architecture reviews into an explainable
-  risk-evaluation service in Go and Python with automated request enrichment,
-  deterministic scoring rules, soak testing, and reason-code telemetry, and
-  hardened JSON decoding and Jira error handling in an event-driven ticket
-  dispatcher.
-- Built a multi-tenant endpoint-policy and exclusions CLI with testbed
-  validation and merge-blocking integration tests supporting CrowdStrike Falcon
-  and Microsoft Defender (MDE) migrations, and an OpenTofu/KVM/libvirt
-  dynamic-analysis lab for inspecting sensor kernel/daemon behavior.
+- Replaced manual firewall and architecture reviews with explainable,
+  audit-ready automation—evolving a prototype into a production Go/Python
+  risk-evaluation service with automated request enrichment, deterministic
+  scoring, soak testing, and reason-code telemetry, and hardening JSON decoding
+  and Jira error handling in an event-driven ticket dispatcher.
+- Completed the enterprise rollout to CrowdStrike Falcon, operated the stack for
+  multiple years, and executed a rapid fleet migration to Microsoft Defender
+  (MDE)—building a multi-tenant exclusions CLI with merge-blocking integration
+  tests and an OpenTofu/KVM/libvirt lab for inspecting sensor kernel/daemon
+  behavior.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*

@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | AI Security, Agent Orchestration & Platforms"
+title: "Security Engineer | AI Security, Agent Orchestration & Platforms"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -30,47 +30,51 @@ privilege.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Co-developed a polyglot source-security inspector to detect security hazards
-  across Go, Python, TypeScript/JavaScript, PowerShell, Terraform, and AI-agent
-  skill/prompt files—authoring vulnerability corpora, agent-file validators,
-  EDR-safe release packaging, and PowerShell canonical-path symlink checks.
-- Contributed repository-grounded tutoring and assessment skills (`teach-me`,
-  `quiz-me`) and cross-platform WSL/PowerShell installer fixes to a
-  deterministic Analyze → Implement → Review AI-agent orchestration framework.
-- Contributed EXL2/AWQ subprocess input hardening, calibration dataset
-  validation, and Pi agent configuration helpers to a local-first Go CLI for
-  hardware-aware quantized LLM evaluation.
-- Architected and rolled out a shared Azure AI Foundry inference gateway with
+- Shifted application and AI-agent security left by conceiving and building a
+  polyglot source-security inspector covering Go, Python, TypeScript/JavaScript,
+  PowerShell, Terraform, and agent skill/prompt files—authoring vulnerability
+  corpora, agent validators, EDR-safe release bundles, and canonical-path checks.
+- Improved developer onboarding and deterministic agent execution by
+  contributing repository-grounded tutoring and assessment skills (`teach-me`,
+  `quiz-me`) and WSL/PowerShell installer fixes to an Analyze → Implement →
+  Review AI-agent orchestration framework.
+- Prevented unsafe execution paths in local-first LLM evaluation by contributing
+  EXL2/AWQ subprocess input hardening, regular-file boundary verification,
+  calibration dataset validation, and Pi configuration helpers to a Go
+  quantization CLI.
+- Enabled safe, self-service adoption of enterprise AI models by architecting
+  and rolling out a shared Azure AI Foundry inference gateway with
   deny-by-default per-deployment RBAC, managed-identity authentication,
-  1Password secret isolation, JWT re-verification, RFC 7807 errors, and upstream
-  body-leakage prevention.
-- Authored a cross-platform architecture, reliability, and operations advisor
-  (`ARIA`) supporting GitHub Copilot, Claude Code, Codex, and Pi across Linux,
-  macOS, Windows, and WSL, and streamlined ticket-policy skills in the shared
-  agent catalog.
-- Engineered a fail-closed security support bot and risk-evaluation engine with
+  1Password secret isolation, JWT re-verification, and body-leakage prevention.
+- Improved architectural sustainability across engineering teams by authoring a
+  cross-platform reliability and operations advisor (`ARIA`) supporting GitHub
+  Copilot, Claude Code, Codex, and Pi across Linux, macOS, Windows, and WSL, and
+  streamlining ticket-policy skills in the shared agent catalog.
+- Eliminated duplicate mutations and manual review bottlenecks by engineering a
+  fail-closed security support bot and explainable risk-evaluation engine with
   durable request ledgers, confirmed-ticket-before-work gating, bounded
-  reconciliation for uncertain writes, and explainable reason-code telemetry.
-- Contributed to an AI-assisted ticket and incident dispatcher by hardening JSON
-  field extraction, Jira/GoJira error handling, and staffing-capacity routing
-  rules across collaboration channels.
-- Designed a Google Cloud to on-premises bridge with least-privilege IAM,
-  artifact controls, and observability, and unblocked a multi-unit Linux
-  endpoint rollout by fixing a package-dependency defect.
+  uncertain-write reconciliation, and reason-code telemetry.
+- Increased reliability of AI-assisted intake routing by hardening JSON field
+  extraction, Jira/GoJira timeout handling, and staffing-capacity routing rules
+  in a collaboration-channel ticket and incident dispatcher.
+- Repeatedly unblocked stalled security deployments, configuration management
+  pipelines, and cross-cloud integrations across business units by resolving
+  root-cause package, permission, and transport defects and designing a
+  least-privilege Google Cloud to on-premises bridge.
 
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Led cloud AI credential-exposure incident response and blameless postmortems,
-  executing Azure control-plane purges and establishing execution-boundary
-  isolation standards requiring AI agents to run in scoped VMs/containers
-  without ambient secret-manager access.
-- Engineered multi-tenant Jira and Azure DevOps CLIs with 1Password secret
-  references, background auth agents, and offline-tested YAML/JSON work
-  blueprints, plus a Go-based multi-org Git SSH and commit-signing identity
-  router.
+- Contained cloud AI credential exposures and prevented recurrence by leading
+  incident response and blameless postmortems, executing Azure control-plane
+  purges, and establishing execution-boundary isolation standards requiring AI
+  agents to run in scoped VMs/containers without ambient secret-manager access.
+- Eliminated plaintext developer tokens and reduced issue-management toil across
+  enterprise tenants by engineering 1Password-backed multi-tenant Jira and Azure
+  DevOps CLIs with offline-tested blueprints, plus a Go multi-org Git SSH and
+  commit-signing identity router.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
@@ -82,9 +86,9 @@ AI/systems engineering, and embedded research.
   and Q8 KV cache behind an Anthropic-compatible LiteLLM proxy), a deterministic
   Go gameplay agent and evaluation harness for *Cultist Simulator*, and a local
   webcam iris-gaze tracker for Hyprland window focus.
-- Extended the Tock OS real-time operating system, built Rust hardware drivers
-  and graphical interfaces for wearable ARM/ESP devices, and implemented
-  out-of-band Bluetooth authentication for medical devices.
+- Extended Tock OS, built Rust hardware drivers and graphical interfaces for
+  wearable ARM/ESP devices, and implemented out-of-band Bluetooth authentication
+  for medical devices.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*

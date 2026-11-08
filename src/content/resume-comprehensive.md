@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | Security Platforms, Infrastructure & Automation"
+title: "Security Engineer | Security Platforms, Infrastructure & Automation"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -50,7 +50,7 @@ Nmap, Splunk, and Azure DevOps.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
 - Architected and evolved a shared multi-service security platform spanning
@@ -58,22 +58,23 @@ Nmap, Splunk, and Azure DevOps.
   isolation, issue automation, observability, risk evaluation, and AI inference
   across Azure, Google Cloud, and hybrid on-premises data centers and
   subsidiary networks.
-- Built and shipped cross-platform endpoint-security tooling and led
-  bidirectional CrowdStrike Falcon and Microsoft Defender (MDE) fleet
-  migrations in Rust, Go, and Python across Linux, Windows, and macOS
-  estates—including a statically linked Rust Linux onboarding installer
-  (`x86_64`/`aarch64` MUSL) and fleet-config pipeline, a KVM/libvirt
-  dynamic-analysis lab for studying EDR sensor internals, a Windows ETW/ETL
-  trace analyzer attributing scan overhead to root processes, and a
+- Completed the final phase of the enterprise migration to CrowdStrike Falcon,
+  operated the Falcon stack across Linux, Windows, and macOS for multiple years,
+  and then executed a rapid fleet migration to Microsoft Defender for Endpoint
+  (MDE) and maintained it in production—building a statically linked Rust Linux
+  onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config pipeline, a
+  KVM/libvirt dynamic-analysis lab for studying EDR sensor internals, a Windows
+  ETW/ETL trace analyzer attributing scan overhead to root processes, and a
   multi-tenant exclusions CLI with merge-blocking integration tests.
-- Unblocked a global Linux endpoint-security rollout across multiple business
-  units by isolating and fixing a package-dependency failure that had crashed
-  configuration management and halted fleet deployment.
-- Co-developed a polyglot source-security inspector, contributed companion
-  tutoring/assessment skills (`teach-me`, `quiz-me`) and WSL/PowerShell
-  installer fixes to a deterministic Analyze → Implement → Review AI-agent
-  orchestration framework, and contributed EXL2/AWQ runtime boundary checks to a
-  Go LLM quantization evaluator.
+- Repeatedly unblocked stalled enterprise security rollouts, configuration
+  management pipelines, and cross-unit deployments across business units by
+  isolating and fixing root-cause package-dependency, sensor/kernel, permission,
+  and runtime failures across heterogeneous fleet environments.
+- Conceived and built a polyglot source-security inspector, contributed
+  companion tutoring/assessment skills (`teach-me`, `quiz-me`) and
+  WSL/PowerShell installer fixes to a deterministic Analyze → Implement → Review
+  AI-agent orchestration framework, and contributed EXL2/AWQ runtime boundary
+  checks to a Go LLM quantization evaluator.
 - Engineered multi-tenant Jira and Azure DevOps automation CLIs and an
   event-driven security support-bot architecture featuring zero plaintext PAT
   storage (1Password-injected auth), blueprint execution, idempotent request
@@ -197,11 +198,11 @@ research services, primarily for ARM Cortex platforms.
 
 ### Endpoint-security deployment, migrations, and operations
 
-- Engineered and operated cross-platform endpoint protection (CrowdStrike
-  Falcon and Microsoft Defender for Endpoint) deployment, bidirectional fleet
-  migrations, policy automation, and diagnostics across Linux, Windows, and
-  macOS estates spanning globally distributed business units and acquired
-  subsidiary networks.
+- Completed the tail end of the enterprise migration to CrowdStrike Falcon,
+  operated and maintained the Falcon stack across Linux, Windows, and macOS for
+  multiple years, and subsequently executed a rapid fleet migration to Microsoft
+  Defender for Endpoint (MDE), maintaining MDE in production for over a year
+  across globally distributed business units and acquired subsidiary networks.
 - Built a statically linked Rust Linux endpoint-security onboarding installer
   (`x86_64`/`aarch64`, MUSL/GitHub release pipelines) with tenant-aware
   configuration, URL/JSON validation, retry logic, and automated support-ticket
@@ -213,9 +214,10 @@ research services, primarily for ARM Cortex platforms.
   network planes to inspect CrowdStrike and MDE sensor internals, kernel/daemon
   behavior, tamper protection, package-manager updates, and policy uptake prior
   to fleet rollout.
-- Unblocked a large enterprise Linux endpoint-security onboarding program by
-  diagnosing and fixing a package-dependency failure that had interrupted
-  configuration management and halted new-host deployment.
+- Repeatedly unblocked stalled enterprise endpoint-security rollouts and
+  configuration management pipelines across business units by diagnosing and
+  fixing root-cause package-dependency, sensor/kernel, and deployment failures
+  across heterogeneous host environments.
 - Built a multi-tenant endpoint-policy and exclusions CLI with testbed
   validation and merge-blocking integration tests.
 - Established deduplicated canonical-event telemetry across Slack, Jira, and M365
@@ -224,11 +226,11 @@ research services, primarily for ARM Cortex platforms.
 
 ### AI-agent security, local inference, and deterministic engineering workflows
 
-- Co-developed a polyglot source-security inspector that detects hazardous
-  code patterns and antipatterns across Go, Python, TypeScript/JavaScript,
-  PowerShell, Terraform, and AI-agent configuration surfaces—authoring
-  vulnerability corpora, agent-file validators, PowerShell canonical-path
-  symlink hardening, and EDR-safe release packaging.
+- Conceived and built a polyglot source-security inspector that detects
+  hazardous code patterns and antipatterns across Go, Python,
+  TypeScript/JavaScript, PowerShell, Terraform, and AI-agent configuration
+  surfaces—authoring vulnerability corpora, agent-file validators, PowerShell
+  canonical-path symlink hardening, and EDR-safe release packaging.
 - Contributed repository-grounded tutoring and assessment skills (`teach-me`,
   `quiz-me`) and cross-platform WSL/PowerShell installer fixes to a
   deterministic Analyze → Implement → Review orchestration framework for AI

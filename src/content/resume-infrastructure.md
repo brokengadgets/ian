@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | Infrastructure, Cloud & DevSecOps"
+title: "Security Engineer | Infrastructure, Cloud & DevSecOps"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -29,50 +29,53 @@ design, automated testing, cross-platform tooling, and systems integration.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Architected infrastructure-as-code and Go service templates for a shared
-  multi-service security platform across Azure, Google Cloud, and hybrid
-  on-premises data centers and subsidiary networks using managed identities,
-  1Password secret isolation, and deny-by-default RBAC.
-- Consulted on and built Terraform/Terragrunt prototypes for consolidating
-  Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl security-logging
-  pipelines under federated identity, subscription-less MS Graph plan scoping,
-  and staged promotion guardrails (`PR → validate → plan → approve → deploy → verify`).
-- Engineered cross-platform endpoint-security deployment, fleet automation, and
-  bidirectional CrowdStrike Falcon ↔ Microsoft Defender (MDE) migrations across
-  Linux, Windows, and macOS—including a statically linked Rust Linux onboarding
-  installer (`x86_64`/`aarch64` MUSL), an OpenTofu/KVM/libvirt lab for
-  inspecting EDR internals, an ETW/ETL process-attribution trace analyzer, and a
-  multi-tenant exclusions CLI with merge-blocking integration tests.
-- Unblocked a multi-unit enterprise Linux endpoint-security rollout by
-  diagnosing and fixing a package-dependency failure that had crashed
-  configuration management and halted rollout.
-- Built a Go-based multi-org Git SSH and commit-signing identity router and
-  GitHub EMU repository migrator, multi-tenant Jira and Azure DevOps CLIs, and
-  cloud control-plane remediation workflows for exposed-credential purges and
-  multi-board service recovery.
-- Designed a Google Cloud to on-premises bridge with least-privilege IAM,
-  artifact controls, and observability that decoupled generalized platform
-  transport from environment-specific legacy infrastructure, connecting
-  external SaaS event sources to internal pipelines via secure tunnels.
-- Rolled out a shared AI-inference service behind an identity-aware,
-  credential-isolating gateway and rewrote a serverless cloud bucket-proxy
-  function in Go for substantially faster runtime execution and lower toil.
-- Established deduplicated canonical-event telemetry across Slack, Jira, and M365
-  to measure endpoint-security (CrowdStrike/MDE/MDO/MDC) support load and
-  separate steady-state volume from mass-migration surges.
+- Standardized cloud service delivery across Azure, Google Cloud, and hybrid
+  subsidiary networks by architecting reusable infrastructure-as-code and Go
+  service templates with managed identities, 1Password secret isolation, and
+  deny-by-default RBAC.
+- Reduced duplicated operational overhead across policy and logging stacks by
+  consulting on and building Terraform/Terragrunt prototypes that unify
+  Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl pipelines under
+  federated identity, subscription-less MS Graph plan scoping, and staged
+  promotion guardrails (`PR → validate → plan → approve → deploy → verify`).
+- Completed the final phase of the enterprise migration to CrowdStrike Falcon,
+  operated Falcon across Linux, Windows, and macOS for multiple years, and then
+  executed a rapid fleet-wide migration to Microsoft Defender for Endpoint
+  (MDE)—building a statically linked Rust Linux onboarding installer
+  (`x86_64`/`aarch64` MUSL), an OpenTofu/KVM/libvirt EDR lab, an ETW/ETL
+  process-attribution trace analyzer, and a multi-tenant exclusions CLI.
+- Repeatedly unblocked stalled enterprise security rollouts, configuration
+  management pipelines, and cross-unit deployments across heterogeneous fleets
+  by isolating and fixing root-cause package-dependency, sensor/kernel,
+  permission, and infrastructure failures.
+- Eliminated developer credential sprawl and accelerated incident recovery by
+  building a Go multi-org Git SSH and commit-signing identity router, a GitHub
+  EMU repository migrator, 1Password-backed Jira/Azure DevOps CLIs, and cloud
+  control-plane remediation workflows for exposed-credential purges.
+- Decoupled generalized cloud platform transport from legacy on-premises
+  infrastructure without weakening access boundaries by designing a Google Cloud
+  bridge with least-privilege IAM, artifact controls, and secure SaaS-to-internal
+  event tunneling.
+- Enabled governed internal LLM adoption and cut serverless runtime latency and
+  toil by rolling out an identity-aware AI-inference gateway and rewriting a
+  legacy cloud bucket-proxy function in Go.
+- Provided leadership with actionable capacity and migration visibility by
+  establishing deduplicated canonical-event telemetry across Slack, Jira, and
+  M365 to separate steady-state CrowdStrike/MDE/MDO/MDC support load from
+  mass-migration surges.
 
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Engineered a fail-closed security support bot and Azure DevOps event-worker
+- Eliminated unverified ticket mutations and manual support triage by
+  engineering a fail-closed security support bot and Azure DevOps event-worker
   pipeline with durable request ledgers, confirmed-ticket-before-work gating,
-  bounded read-only reconciliation for uncertain writes, and full
-  infrastructure-as-code deployment.
-- Evolved manual firewall and security-architecture reviews into an explainable
-  risk-evaluation service with automated enrichment, deterministic scoring, soak
-  testing, and reason-code telemetry, and authored a cross-platform
+  bounded uncertain-write reconciliation, and full IaC deployment.
+- Replaced manual firewall and architecture reviews with explainable,
+  repeatable automation—shipping a deterministic risk-evaluation service with
+  soak testing and reason-code telemetry, and authoring a cross-platform
   architecture/SRE readiness advisor (`ARIA`).
 
 ### Broken Gadgets Research and Development LLC — President and CEO

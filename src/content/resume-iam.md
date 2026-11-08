@@ -1,6 +1,6 @@
 ---
 name: "Ian Trent"
-title: "Senior Security Engineer | Identity & Access Management (IAM)"
+title: "Security Engineer | Identity & Access Management (IAM)"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
@@ -34,47 +34,51 @@ Users (EMU), GitHub Actions, and Azure DevOps.
 
 ## Professional Experience
 
-### Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer
+### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Architected authentication, authorization, and secret-isolation services for
-  a shared multi-service security platform—enforcing managed-identity
-  authentication (Azure UAMI), JWT re-verification, and deny-by-default
-  per-endpoint and per-deployment RBAC across cloud and on-premises boundaries.
-- Built a Go-based Git SSH and commit-signing identity router and GitHub EMU
-  repository migrator that transparently resolve SSH authentication keys and
-  cryptographic signing identities across personal and multiple enterprise
-  organizations without URL rewrites or host aliases.
-- Engineered multi-tenant Jira and Azure DevOps CLIs and background auth agents
-  that eliminate plaintext PAT storage and CLI token flags, resolving
-  credentials exclusively at runtime via 1Password secret references.
-- Consulted on and built prototypes for unifying Defender-as-Code (MS
-  Graph/Intune) and security-logging pipelines—including automated
-  cloud-identity hand-back receivers, landing-zone IAM role bootstrapping, and
-  subscription-less Microsoft Graph plan scoping under federated identity.
-- Evaluated third-party Microsoft Graph and Entra ID permission footprints
-  (PIM, Conditional Access, directory roles, and app consent) and produced
-  zero-trust access troubleshooting guides and live debugging workshops.
-- Led cloud credential-exposure incident response and blameless postmortems,
-  executing Azure control-plane resource purges, rotating compromised service
-  credentials during multi-board outages, and establishing execution-boundary
-  credential isolation standards for AI agents.
-- Designed a Google Cloud to on-premises bridge with least-privilege IAM,
-  artifact controls, and observability that decoupled generalized platform
-  transport from environment-specific legacy dependencies without weakening
-  access boundaries.
+- Standardized zero-trust service-to-service access across a shared
+  multi-service security platform by architecting authentication, authorization,
+  and secret-isolation services—enforcing managed-identity authentication (Azure
+  UAMI), JWT re-verification, and deny-by-default per-endpoint and
+  per-deployment RBAC across cloud and on-premises boundaries.
+- Eliminated cross-organization credential misrouting and identity friction for
+  engineers by building a Go Git SSH and commit-signing identity router and
+  GitHub EMU repository migrator that transparently resolve keys and signing
+  identities across personal and enterprise orgs without URL rewrites.
+- Eradicated plaintext PAT storage and CLI token flags across issue-tracking
+  workflows by engineering multi-tenant Jira and Azure DevOps CLIs and
+  background auth agents that resolve credentials exclusively at runtime via
+  1Password secret references.
+- Reduced multi-tenant identity drift by consulting on and prototyping unified
+  Defender-as-Code (MS Graph/Intune) and security-logging pipelines—including
+  automated cloud-identity hand-back receivers, landing-zone IAM role
+  bootstrapping, and subscription-less MS Graph plan scoping under federated
+  identity.
+- Reduced over-privileged third-party integrations and SME bottlenecks by
+  evaluating Microsoft Graph and Entra ID permission footprints (PIM,
+  Conditional Access, directory roles, app consent) and delivering zero-trust
+  access troubleshooting guides and live debugging workshops.
+- Contained cloud credential exposures and restored multi-board workflow
+  outages by leading incident response and blameless postmortems, executing
+  Azure control-plane purges, rotating compromised service credentials, and
+  establishing execution-boundary isolation standards for AI agents.
+- Decoupled generalized cloud platform transport from legacy on-premises
+  environments without weakening access boundaries by designing a least-privilege
+  Google Cloud bridge, and repeatedly unblocked stalled cross-team deployments
+  and permission bottlenecks across business units.
 
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Senior Security Engineer <em>(continued)</em></p>
+<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Designed and rolled out an identity-aware AI-inference gateway with
-  synchronous completion routing, Azure UAMI managed identities, 1Password-isolated
-  external provider keys, JWT re-verification, RFC 7807 error sanitization, and
-  upstream body-leakage prevention.
-- Built a fail-closed security support bot and Azure DevOps event-worker
-  pipeline enforcing least-privilege service identities, durable request
-  ledgers, confirmed-ticket-before-work gating, and bounded read-only
-  reconciliation for uncertain mutations, plus an explainable risk-evaluation
-  service with reason-code telemetry.
+- Enabled safe, self-service adoption of enterprise AI models by designing and
+  rolling out an identity-aware AI-inference gateway with synchronous completion
+  routing, Azure UAMI managed identities, 1Password-isolated external keys, JWT
+  re-verification, RFC 7807 error sanitization, and body-leakage prevention.
+- Replaced manual approval and intake toil with auditable, least-privilege
+  automation—shipping a fail-closed support bot and Azure DevOps event-worker
+  pipeline with durable request ledgers and bounded uncertain-write
+  reconciliation, plus an explainable risk-evaluation service with reason-code
+  telemetry.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
