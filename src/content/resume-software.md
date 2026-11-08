@@ -58,8 +58,8 @@ workloads, observability, artifact management, and event-driven systems.
 - Shifted code and AI-agent security left by conceiving and building a polyglot
   source-security inspector (Go, Python, TypeScript/JavaScript, PowerShell,
   Terraform, agent surfaces), while contributing EXL2/AWQ subprocess boundary
-  checks to a Go LLM quantization CLI and companion skills (`teach-me`,
-  `quiz-me`) and WSL/PowerShell installer fixes to an AI-agent framework.
+  checks to a Go LLM quantization CLI and repository-grounded learning workflows
+  and WSL/PowerShell installer fixes to an AI-agent framework.
 - Improved upstream open-source rendering reliability by contributing compositor
   regression tests (bilateral blur, glare streaks, keying screen, and
   mask/pixelate/group nodes) to Blender.

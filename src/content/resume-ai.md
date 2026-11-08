@@ -38,27 +38,27 @@ privilege.
   PowerShell, Terraform, and agent skill/prompt files—authoring vulnerability
   corpora, agent validators, EDR-safe release bundles, and canonical-path checks.
 - Improved developer onboarding and deterministic agent execution by
-  contributing repository-grounded tutoring and assessment skills (`teach-me`,
-  `quiz-me`) and WSL/PowerShell installer fixes to an Analyze → Implement →
-  Review AI-agent orchestration framework.
+  contributing repository-grounded tutoring and assessment workflows and
+  WSL/PowerShell installer fixes to an Analyze → Implement → Review AI-agent
+  orchestration framework.
 - Prevented unsafe execution paths in local-first LLM evaluation by contributing
   EXL2/AWQ subprocess input hardening, regular-file boundary verification,
-  calibration dataset validation, and Pi configuration helpers to a Go
+  calibration dataset validation, and agent configuration helpers to a Go
   quantization CLI.
 - Enabled safe, self-service adoption of enterprise AI models by architecting
   and rolling out a shared Azure AI Foundry inference gateway with
   deny-by-default per-deployment RBAC, managed-identity authentication,
   1Password secret isolation, JWT re-verification, and body-leakage prevention.
 - Improved architectural sustainability across engineering teams by authoring a
-  cross-platform reliability and operations advisor (`ARIA`) supporting GitHub
-  Copilot, Claude Code, Codex, and Pi across Linux, macOS, Windows, and WSL, and
+  cross-platform reliability and operations advisor supporting GitHub Copilot,
+  Claude Code, Codex, and Pi across Linux, macOS, Windows, and WSL, and
   streamlining ticket-policy skills in the shared agent catalog.
 - Eliminated duplicate mutations and manual review bottlenecks by engineering a
   fail-closed security support bot and explainable risk-evaluation engine with
   durable request ledgers, confirmed-ticket-before-work gating, bounded
   uncertain-write reconciliation, and reason-code telemetry.
 - Increased reliability of AI-assisted intake routing by hardening JSON field
-  extraction, Jira/GoJira timeout handling, and staffing-capacity routing rules
+  extraction, Jira client timeout handling, and staffing-capacity routing rules
   in a collaboration-channel ticket and incident dispatcher.
 - Repeatedly unblocked stalled security deployments, configuration management
   pipelines, and cross-cloud integrations across business units by resolving

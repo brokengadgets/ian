@@ -72,9 +72,9 @@ Snort, Nmap, and Splunk.
 <p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
 - Improved architectural sustainability and deterministic AI-agent delivery by
-  authoring an operational-risk advisor (`ARIA`) and contributing
-  repository-grounded tutoring/assessment skills (`teach-me`, `quiz-me`) and
-  cross-platform installer validation to an AI-agent orchestration framework.
+  authoring an operational-risk advisor and contributing repository-grounded
+  tutoring/assessment workflows and cross-platform installer validation to an
+  AI-agent orchestration framework.
 - Standardized Linux endpoint onboarding and reduced policy drift across studios
   by building a statically linked Rust onboarding installer (`x86_64`/`aarch64`
   MUSL) with strict URL/JSON validation and retry logic, and prototyping

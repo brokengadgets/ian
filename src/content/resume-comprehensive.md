@@ -71,10 +71,10 @@ Nmap, Splunk, and Azure DevOps.
   isolating and fixing root-cause package-dependency, sensor/kernel, permission,
   and runtime failures across heterogeneous fleet environments.
 - Conceived and built a polyglot source-security inspector, contributed
-  companion tutoring/assessment skills (`teach-me`, `quiz-me`) and
-  WSL/PowerShell installer fixes to a deterministic Analyze → Implement → Review
-  AI-agent orchestration framework, and contributed EXL2/AWQ runtime boundary
-  checks to a Go LLM quantization evaluator.
+  repository-grounded tutoring and assessment workflows and WSL/PowerShell
+  installer fixes to a deterministic Analyze → Implement → Review AI-agent
+  orchestration framework, and contributed EXL2/AWQ runtime boundary checks to a
+  Go LLM quantization evaluator.
 - Engineered multi-tenant Jira and Azure DevOps automation CLIs and an
   event-driven security support-bot architecture featuring zero plaintext PAT
   storage (1Password-injected auth), blueprint execution, idempotent request
@@ -231,18 +231,17 @@ research services, primarily for ARM Cortex platforms.
   TypeScript/JavaScript, PowerShell, Terraform, and AI-agent configuration
   surfaces—authoring vulnerability corpora, agent-file validators, PowerShell
   canonical-path symlink hardening, and EDR-safe release packaging.
-- Contributed repository-grounded tutoring and assessment skills (`teach-me`,
-  `quiz-me`) and cross-platform WSL/PowerShell installer fixes to a
-  deterministic Analyze → Implement → Review orchestration framework for AI
-  coding agents.
+- Contributed repository-grounded tutoring and assessment workflows and
+  cross-platform WSL/PowerShell installer fixes to a deterministic Analyze →
+  Implement → Review orchestration framework for AI coding agents.
 - Contributed EXL2/AWQ subprocess input hardening, regular-file boundary
-  verification, calibration dataset validators, and Pi agent configuration
-  helpers to a local-first Go CLI for quantized LLM evaluation.
+  verification, calibration dataset validators, and agent configuration helpers
+  to a local-first Go CLI for quantized LLM evaluation.
 - Contributed compositor regression tests (bilateral blur, glare streaks, keying
   screen, mask/pixelate/group nodes) to upstream Blender.
 - Shipped a cross-platform architecture, reliability, and operations advisor
-  (`ARIA`) packaged across GitHub Copilot, Claude Code, Codex, and Pi on Linux,
-  macOS, Windows, and WSL to evaluate SRE readiness, lifecycle ownership, tenant
+  packaged across GitHub Copilot, Claude Code, Codex, and Pi on Linux, macOS,
+  Windows, and WSL to evaluate SRE readiness, lifecycle ownership, tenant
   boundaries, and operational toil.
 
 ### Issue-management, support-bot, and risk-evaluation automation
@@ -256,7 +255,7 @@ research services, primarily for ARM Cortex platforms.
   confirmed-ticket-before-work gating, bounded read-only reconciliation for
   uncertain mutations, and cross-platform artifact packaging.
 - Contributed to a policy-aware ticket and incident dispatcher by hardening JSON
-  field extraction, Jira/GoJira timeout handling, and staffing-capacity routing
+  field extraction, Jira client timeout handling, and staffing-capacity routing
   rules across collaboration channels.
 - Evolved firewall and security-approval workflows from manual review into an
   explainable risk-evaluation service with real-ticket integration, soak testing,

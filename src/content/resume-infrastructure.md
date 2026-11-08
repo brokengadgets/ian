@@ -76,7 +76,7 @@ design, automated testing, cross-platform tooling, and systems integration.
 - Replaced manual firewall and architecture reviews with explainable,
   repeatable automation—shipping a deterministic risk-evaluation service with
   soak testing and reason-code telemetry, and authoring a cross-platform
-  architecture/SRE readiness advisor (`ARIA`).
+  architecture and SRE readiness advisor.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*

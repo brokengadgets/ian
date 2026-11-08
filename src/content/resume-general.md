@@ -57,8 +57,8 @@ Windows, and macOS.
   permission, and runtime failures across diverse fleet environments.
 - Shifted code and AI-agent security left by conceiving and building a polyglot
   source-security inspector (Go, Python, TypeScript/JavaScript, PowerShell,
-  Terraform, agent surfaces), while contributing tutoring/assessment skills
-  (`teach-me`, `quiz-me`), WSL/PowerShell installer fixes, and runtime boundary
+  Terraform, agent surfaces), while contributing repository-grounded tutoring
+  and assessment workflows, WSL/PowerShell installer fixes, and runtime boundary
   checks to internal AI orchestration and LLM quantization tools.
 - Eliminated credential sprawl and manual ticket toil across personal and
   multi-org GitHub EMU and cloud tenants by engineering 1Password-backed
