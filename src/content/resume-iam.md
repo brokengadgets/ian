@@ -8,77 +8,74 @@ website: "https://brokengadgets.github.io/ian"
 github: "brokengadgets"
 linkedin: ""
 summary: >
-  Staff-caliber IAM and security platform engineer specializing in workload
-  identity, federated authentication, deny-by-default authorization,
-  zero-plaintext secret isolation, and developer-identity routing across Azure
-  Entra ID, Google Cloud, and multi-org enterprise environments.
+  Staff-caliber IAM and security platform engineer specializing in Identity as
+  Code, automation workload identity, AI-agent identity and execution isolation,
+  and least-privilege external/third-party access across Azure Entra ID, Google
+  Cloud, and multi-org enterprise environments.
 ---
 
 ## Technical Focus
 
-**Identity as Code & Access Architecture:** Declarative IAM provisioning
-(Terraform/Terragrunt) for human and workload identities, federated OIDC &
-managed identities (Azure UAMI / GCP service accounts), Microsoft Entra ID / MS
-Graph RBAC, landing-zone role bootstrapping, OAuth2 / OIDC / JWT verification,
-Privileged Identity Management (PIM), SSH & commit-signing identity routing,
-and deny-by-default policy enforcement.
+**Identity as Code & Workload Identity:** Declarative IAM provisioning
+(Terraform, Terragrunt, NixOS) for human, CI/CD, and service identities;
+federated OIDC and workload identities (Azure UAMI, GCP service accounts);
+landing-zone role bootstrapping; subscription-less MS Graph plan scoping;
+zero-plaintext credential injection (1Password, Key Vault, GCP Secret Manager);
+and multi-org Git SSH/signing identity routing.
 
-**Secrets & Credential Security:** Zero-plaintext credential architectures,
-1Password secret-reference injection, Azure Key Vault, Google Cloud Secret
-Manager, service-account lifecycle governance, and cloud control-plane
-credential revocation/purge.
+**AI Identity & Agent Governance:** Identity-aware AI inference gateways,
+per-deployment RBAC and JWT re-verification, non-human identity scoping for AI
+agents and MCP integrations, execution-boundary credential isolation, and
+control-plane key revocation/purge.
 
-**Engineering & Infrastructure:** Go, Rust, Python, Terraform, Terragrunt,
-Nix/NixOS, API gateways, multi-tenant CLI design, GitHub Enterprise Managed
-Users (EMU), GitHub Actions, and Azure DevOps.
+**External Party, B2B & Cross-Boundary Access:** Third-party app-consent and MS
+Graph/Entra ID permission governance (PIM, Conditional Access, directory roles),
+cross-tenant/subsidiary access boundaries (GitHub EMU, acquired networks),
+least-privilege SaaS/partner bridges, and OAuth2/OIDC SSO.
 
 ## Professional Experience
 
 ### Microsoft Gaming — Activision Blizzard Publishing — Security Engineer
 *January 2023–Present*
 
-- Standardized zero-trust service-to-service access across a shared
-  multi-service security platform by architecting authentication, authorization,
-  and secret-isolation services—enforcing managed-identity authentication (Azure
-  UAMI), JWT re-verification, and deny-by-default per-endpoint and
-  per-deployment RBAC across cloud and on-premises boundaries.
-- Eliminated cross-organization credential misrouting and identity friction for
-  engineers by building a Go Git SSH and commit-signing identity router and
-  GitHub EMU repository migrator that transparently resolve keys and signing
-  identities across personal and enterprise orgs without URL rewrites.
-- Eradicated plaintext PAT storage and CLI token flags across issue-tracking
-  workflows by engineering multi-tenant Jira and Azure DevOps CLIs and
-  background auth agents that resolve credentials exclusively at runtime via
-  1Password secret references.
-- Reduced multi-tenant identity drift by consulting on and prototyping unified
-  Defender-as-Code (MS Graph/Intune) and security-logging pipelines—including
-  automated cloud-identity hand-back receivers, landing-zone IAM role
-  bootstrapping, and subscription-less MS Graph plan scoping under federated
-  identity.
-- Reduced over-privileged third-party integrations and SME bottlenecks by
-  evaluating Microsoft Graph and Entra ID permission footprints (PIM,
-  Conditional Access, directory roles, app consent) and delivering zero-trust
-  access troubleshooting guides and live debugging workshops.
-- Contained cloud credential exposures and restored multi-board workflow
-  outages by leading incident response and blameless postmortems, executing
-  Azure control-plane purges, rotating compromised service credentials, and
-  establishing execution-boundary isolation standards for AI agents.
-- Decoupled generalized cloud platform transport from legacy on-premises
-  environments without weakening access boundaries by designing a least-privilege
-  Google Cloud bridge, and repeatedly unblocked stalled cross-team deployments
-  and permission bottlenecks across business units.
+- Standardized zero-trust workload identity across a shared multi-service
+  security platform by architecting authentication, authorization, and
+  secret-isolation services in Go and Terraform—enforcing Azure UAMI managed
+  identities, JWT re-verification, and deny-by-default per-endpoint RBAC across
+  cloud and on-premises boundaries.
+- Enabled governed, self-service AI adoption by designing and rolling out an
+  identity-aware AI-inference gateway with caller-identity verification,
+  deny-by-default per-deployment RBAC, Azure UAMI downstream auth,
+  1Password-isolated external provider keys, and RFC 7807 error sanitization.
+- Established AI-agent identity and execution-boundary isolation standards
+  following cloud credential-exposure incident response—executing Azure
+  control-plane resource purges, rotating compromised service credentials, and
+  mandating scoped VM/container identities without ambient secret access.
+- Reduced multi-tenant Identity-as-Code drift by consulting on and prototyping
+  unified Defender-as-Code (MS Graph/Intune) and security-logging
+  pipelines—delivering automated cloud-identity hand-back receivers,
+  landing-zone IAM role bootstrapping, and subscription-less MS Graph plan
+  scoping under federated OIDC.
+- Curbed over-privileged external-party and SaaS access by evaluating
+  third-party MS Graph, Entra ID, and MCP integration permission footprints
+  (PIM, Conditional Access, directory roles, app consent) and leading zero-trust
+  access debugging workshops.
+- Secured external partner, SaaS, and subsidiary ingress without weakening
+  internal trust boundaries by designing a least-privilege Google Cloud to
+  on-premises bridge with scoped service accounts and artifact controls, and
+  repeatedly unblocking stalled cross-boundary deployments.
 
 <p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
 
-- Enabled safe, self-service adoption of enterprise AI models by designing and
-  rolling out an identity-aware AI-inference gateway with synchronous completion
-  routing, Azure UAMI managed identities, 1Password-isolated external keys, JWT
-  re-verification, RFC 7807 error sanitization, and body-leakage prevention.
-- Replaced manual approval and intake toil with auditable, least-privilege
-  automation—shipping a fail-closed support bot and Azure DevOps event-worker
-  pipeline with durable request ledgers and bounded uncertain-write
-  reconciliation, plus an explainable risk-evaluation service with reason-code
-  telemetry.
+- Eradicated static secrets and cross-org identity misrouting across automation
+  and developer workflows by building 1Password-backed multi-tenant Jira/Azure
+  DevOps auth agents, a Go Git SSH and commit-signing identity router, and a
+  GitHub EMU repository migrator.
+- Replaced over-privileged automation bots and manual access/firewall reviews
+  with auditable, least-privilege workload identities—shipping a fail-closed
+  support bot and Azure DevOps event-worker pipeline with durable request
+  ledgers and bounded uncertain-write reconciliation, plus an explainable
+  risk-evaluation service with reason-code telemetry.
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
@@ -124,7 +121,7 @@ firmware development, and systems research.
 
 ## Selected Strengths
 
-- Workload identity, federated authentication, and least-privilege RBAC design
-- Zero-plaintext secret lifecycles and developer-identity ergonomics
-- Deployment automation, automated testing harnesses, and clear software documentation
-- Cross-cloud IAM governance (Azure Entra ID, Google Cloud, GitHub EMU)
+- Identity as Code (Terraform, Terragrunt, NixOS) and federated OIDC pipelines
+- Non-human & automation workload identity (Azure UAMI, GCP service accounts, zero-plaintext CLIs)
+- AI-agent identity governance, inference gateways, and execution-boundary isolation
+- External-party, B2B/SaaS, and cross-boundary access governance (Entra ID, MS Graph, GitHub EMU)
