@@ -4,8 +4,10 @@ title: "Security Engineer | Application & Product Security"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
-website: "https://brokengadgets.github.io/ian"
-github: "brokengadgets"
+website: "https://brokengadgets.io"
+github:
+  - "github.com/nulvox"
+  - "github.com/brokengadgets"
 linkedin: ""
 summary: >
   Staff-caliber application and platform security engineer specializing in
@@ -58,7 +60,7 @@ Snort, Nmap, and Splunk.
 - Prevented duplicate mutations and unverified external writes in security
   operations by engineering a fail-closed support bot and Azure DevOps adapter
   with a durable request ledger, at-most-once dispatch, bounded uncertain-write
-  reconciliation, and strict redirect/origin/payload validation boundaries.
+  reconciliation, and strict redirect/origin/payload validation.
 - Completed the enterprise transition to CrowdStrike Falcon, operated Falcon
   across global fleets, and subsequently executed a rapid cutover to Microsoft
   Defender for Endpoint (MDE)—building a multi-tenant exclusions CLI with
@@ -68,9 +70,6 @@ Snort, Nmap, and Splunk.
   pipelines, and production automation workflows across business units—isolating
   and fixing root-cause package-dependency, weak-randomness, permission, and
   multi-board service failures.
-
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
-
 - Improved architectural sustainability and deterministic AI-agent delivery by
   authoring an operational-risk advisor and contributing repository-grounded
   tutoring/assessment workflows and cross-platform installer validation to an
@@ -80,18 +79,34 @@ Snort, Nmap, and Splunk.
   MUSL) with strict URL/JSON validation and retry logic, and prototyping
   Defender-as-Code and Sentinel/Cribl unification.
 
+<p class="continued-heading">Professional Experience <em>(continued)</em></p>
+
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting and independent R&D company for contract security,
-firmware development, and systems research.
+Direct an independent security and systems R&D practice focused on
+authentication gateways, parser safety, CI/CD supply-chain hardening, and
+embedded/hardware vulnerability research.
 
-- Engineered a declarative NixOS dual-WAN firewall (`nftables` default-deny and
-  client-isolation rules, automated WAN failover, Prometheus/Loki/Grafana
-  telemetry) and a browser-only Go/WebAssembly save-file validator.
-- Expanded the Tock OS real-time operating system, developed Rust hardware
-  drivers for wearable ARM/ESP devices, and implemented out-of-band Bluetooth
-  authentication for medical devices.
+- Built an open-source Go GitHub OAuth2 service and HAProxy Lua JWT verifier
+  (`haproxy-github-oauth`) with constant-time `HS256` HMAC comparison, explicit
+  algorithm pinning, signed CSRF state cookies, apex-domain open-redirect
+  prevention, and IPv6 rate limiting, alongside a declarative NixOS
+  default-deny `nftables` dual-WAN firewall and strict L3 client isolation.
+- Engineered a zero-dependency, heap-free portable C99 binary save parser and
+  checksum verifier (`libpksave`) across 12 binary formats, browser-only
+  Go/WebAssembly and client-side encrypted save validators (`everdellduo.tools`,
+  `brotato-masher`, `sleditor`) that eliminate server-side file parsing, and
+  `zizmor`-audited, SHA-pinned GitHub Actions release pipelines.
+- Conducted hardware and network attack-surface reconnaissance on embedded
+  night-vision monocular firmware (`scopereversal`), implemented BLE/USB
+  detector telemetry parsers (`openrad`) and Cryptopals cryptography challenge
+  suites in Go (`cryptopals`), and hardened self-hosted email/DNS/TLS appliance
+  hooks (`postinabox`).
+- Implemented out-of-band Bluetooth authentication for embedded medical devices,
+  authored `#![forbid(unsafe_code)]` `no_std` Rust USB HID firmware
+  (`MumenController`) for ARM Cortex-M7 and AVR microcontrollers, extended the
+  Tock OS kernel, and developed Rust drivers for wearable ARM/ESP devices.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*

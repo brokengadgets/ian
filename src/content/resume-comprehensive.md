@@ -4,8 +4,10 @@ title: "Security Engineer | Security Platforms, Infrastructure & Automation"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
-website: "https://brokengadgets.github.io/ian"
-github: "brokengadgets"
+website: "https://brokengadgets.io"
+github:
+  - "github.com/nulvox"
+  - "github.com/brokengadgets"
 linkedin: ""
 summary: >
   Staff-caliber security and platform engineer who architects and operates
@@ -96,35 +98,68 @@ Nmap, Splunk, and Azure DevOps.
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Own and maintain a mostly inactive consulting company used as a vehicle for
-contract security, firmware-development, and embedded-systems research work.
+Direct an independent engineering, security, and embedded-systems R&D company
+delivering edge authentication gateways, scientific telemetry frameworks,
+custom PCBs and bare-metal firmware, portable low-level libraries, and
+declarative self-hosted infrastructure.
 
-
-Provided on-demand security-oriented firmware development and embedded-systems
-research services, primarily for ARM Cortex platforms.
-
-- Planned and developed expansions to the Tock OS real-time operating system.
+- Architected and open-sourced a Go GitHub OAuth2 service and HAProxy Lua JWT
+  verifier (`haproxy-github-oauth`) that enforces GitHub Organization and Team
+  membership as per-backend ACLs in front of VPN-hosted services, featuring
+  constant-time `HS256` HMAC verification, signed CSRF state cookies, IPv6-aware
+  rate limiting, Prometheus metrics, automated Mail-in-a-Box TLS certificate
+  synchronization, OpenVPN TCP MSS/MTU clamping utilities, and Terraform
+  provisioning.
 - Engineered a declarative NixOS dual-WAN router and firewall appliance on PC
   Engines APU4D4 hardware with default-deny `nftables` WAN filters, strict L3
   client isolation, automated WAN failover, and local Prometheus/Loki/Grafana
-  observability.
+  observability, alongside Firecracker microVM rootfs/kernel/bridge helpers
+  (`firecracker-helpers`) and customizable Mail-in-a-Box deployment hooks
+  (`postinabox`).
+- Built `openrad`, a strictly typed Python framework and CLI for radiation
+  detection hardware, gamma-spectrum analysis, and geotagged time-series
+  telemetry—supporting Bluetooth LE and USB streaming from RadiaCode RC-10x and
+  GammaGuard CT007-N detectors, ORTEC/IAEA `.spe` and Theremino MCA histogram
+  parsing, SandiaDecay isotope peak matching, GPX track logging, and headless
+  spectrum/spectrogram rendering across a Linux/macOS/Windows CI matrix.
+- Designed a custom KiCad carrier PCB (Brook 20-pin harness, rectifier diodes,
+  Teensy 4.0 footprint) and authored `MumenController`, a multi-target `no_std`
+  Rust USB HID fight stick firmware workspace (`#![forbid(unsafe_code)]` core
+  engine, Teensy 4.0 ARM Cortex-M7 RTIC v2 and ATmega32U4 AVR targets) with
+  1 ms USB polling, compact shift-register debouncing, and configurable SOCD
+  cleaning.
+- Developed an ESP32 SoftAP Wi-Fi and async HTMX web LED controller
+  (`esp32-led-controller`) served from LittleFS with reproducible Dockerized
+  PlatformIO builds and `zizmor`-audited GitHub Actions releases, plus dual-PID
+  temperature/pressure Arduino Mega 2560 control firmware and a Python host CLI
+  for gas chromatography / mass spectrometry instrumentation
+  (`OpenMS-controller`).
+- Authored `libpksave`, a zero-dependency, heap-free portable C99 library for
+  detecting, parsing, in-place mutating, and checksum-validating binary save
+  files across 12 Generation I–V game variants, paired with a GBA editor and
+  Unity/Python test suites.
+- Shipped cross-platform and local-first applications including `vocabulars` (a
+  Flutter Web, Linux, and Android multilingual pronunciation trainer with a Nix
+  flake devshell, schema-validated content packs, and automated TTS audio
+  pipelines), client-side Go/WebAssembly campaign trackers and browser-only
+  encrypted/JSON save editors (`everdellduo.tools`, `brotato-masher`,
+  `sleditor`, `sdvedit`), and single-source Astro/WeasyPrint/Pandoc résumé
+  publishing pipelines (`starsheet`).
 - Built a self-hosted AMD ROCm local LLM inference stack (`llama.cpp` with flash
   attention and Q8 KV cache fronted by an Anthropic-compatible LiteLLM proxy), a
   deterministic Go gameplay CLI and evaluation harness for *Cultist Simulator*,
-  a browser-only Go/WebAssembly save-file editor, and a local webcam iris-gaze
-  daemon driving Hyprland window focus.
-- Developed and reported on radio-propagation trials across UHF bands,
-  including Wi-Fi, Bluetooth Low Energy, 433 MHz, and 315 MHz.
-- Built graphical interfaces and Rust hardware drivers for wearable ARM and ESP
-  devices.
-- Extended and maintained Docker-based build chains for portable Rust
-  compilation.
-- Consulted on embedded medical-device cybersecurity and implemented
-  out-of-band Bluetooth authentication schemes.
-- Researched radio range-extension attacks and modeled transmitter attenuation
-  mathematically.
-- Worked independently and on research teams of up to four people; wrote,
-  reviewed, and submitted federal Other Transaction Authority proposals.
+  a local webcam iris-gaze daemon driving Hyprland window focus, an algorithmic
+  voice-leading multi-string tab converter (`TabConverter`), and Cryptopals
+  cryptography challenge implementations in Go (`cryptopals`).
+- Planned and developed expansions to the Tock OS real-time operating system,
+  built graphical interfaces and Rust hardware drivers for wearable ARM and ESP
+  devices, and extended Docker-based cross-compilation toolchains for portable
+  Rust builds.
+- Consulted on embedded medical-device cybersecurity, implemented out-of-band
+  Bluetooth Low Energy authentication schemes, conducted embedded night-vision
+  monocular hardware/firmware reconnaissance (`scopereversal`), researched UHF
+  radio range-extension attacks (Wi-Fi, BLE, 433 MHz, 315 MHz), and wrote
+  federal Other Transaction Authority (OTA) proposals.
 
 ### Nebraska Applied Research Institute (NARI), University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*

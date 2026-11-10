@@ -4,8 +4,10 @@ title: "Security Engineer | Identity & Access Management (IAM)"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
-website: "https://brokengadgets.github.io/ian"
-github: "brokengadgets"
+website: "https://brokengadgets.io"
+github:
+  - "github.com/nulvox"
+  - "github.com/brokengadgets"
 linkedin: ""
 summary: >
   Staff-caliber IAM and security platform engineer specializing in Identity as
@@ -64,9 +66,6 @@ least-privilege SaaS/partner bridges, and OAuth2/OIDC SSO.
   internal trust boundaries by designing a least-privilege Google Cloud to
   on-premises bridge with scoped service accounts and artifact controls, and
   repeatedly unblocking stalled cross-boundary deployments.
-
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
-
 - Eradicated static secrets and cross-org identity misrouting across automation
   and developer workflows by building 1Password-backed multi-tenant Jira/Azure
   DevOps auth agents, a Go Git SSH and commit-signing identity router, and a
@@ -77,18 +76,35 @@ least-privilege SaaS/partner bridges, and OAuth2/OIDC SSO.
   ledgers and bounded uncertain-write reconciliation, plus an explainable
   risk-evaluation service with reason-code telemetry.
 
+<p class="continued-heading">Professional Experience <em>(continued)</em></p>
+
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting and independent R&D company for contract security,
-firmware development, and systems research.
+Direct an independent security and infrastructure R&D practice building
+OAuth2/JWT access gateways, zero-trust network appliances, and hardware/embedded
+authentication protocols.
 
-- Engineered a declarative NixOS dual-WAN appliance enforcing default-deny
-  `nftables` WAN anti-management filters, strict per-subnet LAN client
-  isolation, and loopback-bound observability.
+- Architected and open-sourced a Go OAuth2 service and HAProxy Lua JWT verifier
+  (`haproxy-github-oauth`) that authenticates users via GitHub OAuth, validates
+  organization and team membership, and issues short-lived `HS256` session
+  cookies enforced as per-backend ACLs with constant-time HMAC verification,
+  signed CSRF state cookies, strict redirect validation, and Mail-in-a-Box TLS
+  cert sync.
+- Engineered a declarative NixOS dual-WAN router and firewall appliance
+  enforcing default-deny `nftables` WAN anti-management filters, strict
+  per-subnet L3 client isolation, and loopback-bound Prometheus/Loki/Grafana
+  observability, alongside a customizable Mail-in-a-Box identity/email/DNS
+  appliance fork (`postinabox`) and OpenVPN access planes.
+- Standardized CI/CD workload identity and supply-chain governance across public
+  organization and personal repositories (`starsheet`, `bgr-hugo`,
+  `esp32-led-controller`, `MumenController`) using SHA-pinned GitHub Actions,
+  `zizmor` static security audits, least-privilege `GITHUB_TOKEN` scopes, and
+  isolated multi-stage Docker and Nix flake build environments.
 - Consulted on embedded medical-device cybersecurity, implemented out-of-band
-  Bluetooth Low Energy authentication, and extended Tock OS with
-  hardware-isolated Rust drivers.
+  Bluetooth Low Energy authentication schemes, extended the Tock OS real-time
+  operating system with hardware-isolated Rust drivers, and built
+  `#![forbid(unsafe_code)]` `no_std` Rust USB HID firmware on ARM Cortex-M7.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*

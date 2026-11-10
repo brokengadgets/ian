@@ -4,8 +4,10 @@ title: "Security Engineer | Infrastructure, Cloud & DevSecOps"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
-website: "https://brokengadgets.github.io/ian"
-github: "brokengadgets"
+website: "https://brokengadgets.io"
+github:
+  - "github.com/nulvox"
+  - "github.com/brokengadgets"
 linkedin: ""
 summary: >
   Staff-caliber infrastructure and security platform engineer specializing in
@@ -54,7 +56,7 @@ design, automated testing, cross-platform tooling, and systems integration.
 - Eliminated developer credential sprawl and accelerated incident recovery by
   building a Go multi-org Git SSH and commit-signing identity router, a GitHub
   EMU repository migrator, 1Password-backed Jira/Azure DevOps CLIs, and cloud
-  control-plane remediation workflows for exposed-credential purges.
+  control-plane remediation workflows for exposed credentials.
 - Decoupled generalized cloud platform transport from legacy on-premises
   infrastructure without weakening access boundaries by designing a Google Cloud
   bridge with least-privilege IAM, artifact controls, and secure SaaS-to-internal
@@ -66,9 +68,6 @@ design, automated testing, cross-platform tooling, and systems integration.
   establishing deduplicated canonical-event telemetry across Slack, Jira, and
   M365 to separate steady-state CrowdStrike/MDE/MDO/MDC support load from
   mass-migration surges.
-
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
-
 - Eliminated unverified ticket mutations and manual support triage by
   engineering a fail-closed security support bot and Azure DevOps event-worker
   pipeline with durable request ledgers, confirmed-ticket-before-work gating,
@@ -78,19 +77,34 @@ design, automated testing, cross-platform tooling, and systems integration.
   soak testing and reason-code telemetry, and authoring a cross-platform
   architecture and SRE readiness advisor.
 
+<p class="continued-heading">Professional Experience <em>(continued)</em></p>
+
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting and independent R&D company for contract security,
-infrastructure automation, and embedded-systems research.
+Direct an independent infrastructure, security, and embedded-systems R&D lab
+operating declarative NixOS network appliances, VPN-backed edge gateways,
+microVM tooling, and reproducible build pipelines.
 
 - Engineered a declarative NixOS dual-WAN router and firewall on PC Engines
-  APU4D4 hardware featuring default-deny `nftables` WAN filters, strict L3
-  client isolation, automated WAN failover, and local Prometheus/Loki/Grafana
-  telemetry, plus a self-hosted AMD ROCm local LLM stack in Docker.
-- Extended the Tock OS real-time operating system, built Rust hardware drivers
-  for wearable ARM/ESP devices, maintained portable Docker cross-compilation
-  toolchains, and conducted UHF radio-propagation trials.
+  APU4D4 hardware (`nftables` default-deny WAN filters, strict L3 client
+  isolation, automated WAN failover, Prometheus/Loki/Grafana observability), and
+  a Terraform-provisioned Go GitHub OAuth2 and HAProxy Lua JWT access gateway
+  (`haproxy-github-oauth`) fronting OpenVPN-hosted Docker services with
+  automated Mail-in-a-Box TLS certificate sync and TCP MSS/MTU clamping tools.
+- Built Firecracker microVM provisioning utilities (`firecracker-helpers`) that
+  convert Dockerfiles into SSH-ready `.ext4` root filesystems and bridge tap
+  interfaces on NixOS, alongside Nix flake devshells, Dockerized ESP32 and Rust
+  cross-compilation toolchains, and SHA-pinned, `zizmor`-audited GitHub Actions.
+- Deployed a containerized AMD ROCm local LLM inference stack (`llama.cpp` with
+  flash attention and Q8 KV cache behind an Anthropic-compatible LiteLLM proxy),
+  customizable Mail-in-a-Box server hooks (`postinabox`), and single-source
+  Astro/WeasyPrint/Pandoc and Hugo static-site pipelines (`starsheet`,
+  `bgr-hugo`).
+- Built a strictly typed Python radiation-telemetry and gamma-spectroscopy
+  framework (`openrad`) with Linux/macOS/Windows CI matrices, an ESP32
+  SoftAP/HTMX web LED controller, `no_std` Rust USB HID firmware on custom
+  KiCad PCBs (`MumenController`), Tock OS extensions, and UHF propagation trials.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*

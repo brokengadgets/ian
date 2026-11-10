@@ -4,8 +4,10 @@ title: "Security Engineer | AI Security, Agent Orchestration & Platforms"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
-website: "https://brokengadgets.github.io/ian"
-github: "brokengadgets"
+website: "https://brokengadgets.io"
+github:
+  - "github.com/nulvox"
+  - "github.com/brokengadgets"
 linkedin: ""
 summary: >
   Staff-caliber security and AI-platform engineer building deterministic
@@ -64,9 +66,6 @@ privilege.
   pipelines, and cross-cloud integrations across business units by resolving
   root-cause package, permission, and transport defects and designing a
   least-privilege Google Cloud to on-premises bridge.
-
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
-
 - Contained cloud AI credential exposures and prevented recurrence by leading
   incident response and blameless postmortems, executing Azure control-plane
   purges, and establishing execution-boundary isolation standards requiring AI
@@ -76,19 +75,35 @@ privilege.
   DevOps CLIs with offline-tested blueprints, plus a Go multi-org Git SSH and
   commit-signing identity router.
 
+<p class="continued-heading">Professional Experience <em>(continued)</em></p>
+
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting and independent R&D company for contract security,
-AI/systems engineering, and embedded research.
+Direct an independent AI, security, and systems R&D lab building local GPU
+inference stacks, deterministic gameplay evaluation harnesses, computer-vision
+daemons, and scientific analysis tooling.
 
-- Built a self-hosted AMD ROCm local LLM stack (`llama.cpp` with flash attention
-  and Q8 KV cache behind an Anthropic-compatible LiteLLM proxy), a deterministic
-  Go gameplay agent and evaluation harness for *Cultist Simulator*, and a local
-  webcam iris-gaze tracker for Hyprland window focus.
-- Extended Tock OS, built Rust hardware drivers and graphical interfaces for
-  wearable ARM/ESP devices, and implemented out-of-band Bluetooth authentication
-  for medical devices.
+- Engineered a containerized AMD ROCm local LLM inference stack (`llama.cpp`
+  with flash attention and Q8 KV cache behind an Anthropic-compatible LiteLLM
+  proxy) and maintained self-hosted Model Context Protocol (MCP) server
+  integrations (`mcp-atlassian`) for issue-tracking and simulation workflows.
+- Built a deterministic Go gameplay agent and automated evaluation harness for
+  *Cultist Simulator*, a real-time local webcam iris-gaze tracking daemon
+  driving Hyprland window focus, and an algorithmic voice-leading and
+  hand-separation solver (`TabConverter`) for multi-track MIDI, MusicXML, and
+  Guitar Pro scores.
+- Created a strictly typed Python radiation-telemetry and gamma-spectroscopy
+  framework (`openrad`) featuring automated spectrum peak detection, SandiaDecay
+  isotope candidate matching, and headless spectrogram generation, plus a
+  cross-platform Flutter pronunciation trainer (`vocabulars`) with
+  schema-validated vocabulary packs and automated TTS audio asset pipelines.
+- Shipped a Go GitHub OAuth2 and HAProxy Lua JWT access gateway
+  (`haproxy-github-oauth`) with constant-time HMAC verification and Prometheus
+  telemetry, enforced `zizmor` static security audits across GitHub Actions
+  workflows, and developed `#![forbid(unsafe_code)]` `no_std` Rust firmware
+  (`MumenController`), Tock OS extensions, and out-of-band BLE medical-device
+  authentication.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
