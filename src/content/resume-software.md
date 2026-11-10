@@ -4,8 +4,10 @@ title: "Security Engineer | Software & Platform Engineering"
 email: "ian@brokengadgets.io"
 phone: ""
 location: ""
-website: "https://brokengadgets.github.io/ian"
-github: "brokengadgets"
+website: "https://brokengadgets.io"
+github:
+  - "github.com/nulvox"
+  - "github.com/brokengadgets"
 linkedin: ""
 summary: >
   Staff-caliber security and platform software engineer who architects and
@@ -23,7 +25,7 @@ tooling, infrastructure automation, automated testing, release engineering,
 Git, CI/CD, and technical writing.
 
 **Tools:** Cargo Test, GTest, Python unittest, Clang-Tidy, RustFmt, PyLint,
-Docker, Podman, GitHub Actions, and Azure DevOps.
+Docker, Podman, GitHub Actions, Azure DevOps.
 
 **Cloud:** Azure and Google Cloud services, identity, containers, serverless
 workloads, observability, artifact management, and event-driven systems.
@@ -49,8 +51,7 @@ workloads, observability, artifact management, and event-driven systems.
 - Removed developer identity friction and manual fleet diagnostics by authoring
   a Go Git SSH and commit-signing identity router, a GitHub EMU repository
   migrator, a statically linked Rust Linux endpoint onboarding installer
-  (`x86_64`/`aarch64` MUSL), and a Windows ETW/ETL process-attribution trace
-  reader.
+  (`x86_64`/`aarch64` MUSL), and a Windows ETW/ETL scan trace reader.
 - Cut serverless latency and deployment risk by rewriting a legacy cloud
   bucket-proxy function in Go and hardening CI/CD pipelines with
   multi-architecture release matrices, merge-blocking integration suites, and
@@ -67,9 +68,6 @@ workloads, observability, artifact management, and event-driven systems.
   management pipelines, and production automation services across business units
   by isolating and fixing root-cause package-dependency, weak-randomness,
   permission, and runtime defects.
-
-<p class="continued-heading">Microsoft Gaming — Activision Blizzard Publishing — Security Engineer <em>(continued)</em></p>
-
 - Replaced manual firewall and architecture reviews with explainable,
   audit-ready automation—evolving a prototype into a production Go/Python
   risk-evaluation service with automated request enrichment, deterministic
@@ -78,23 +76,39 @@ workloads, observability, artifact management, and event-driven systems.
 - Completed the enterprise rollout to CrowdStrike Falcon, operated the stack for
   multiple years, and executed a rapid fleet migration to Microsoft Defender
   (MDE)—building a multi-tenant exclusions CLI with merge-blocking integration
-  tests and an OpenTofu/KVM/libvirt lab for inspecting sensor kernel/daemon
-  behavior.
+  tests and an OpenTofu/KVM/libvirt sensor analysis lab.
+
+<p class="continued-heading">Professional Experience <em>(continued)</em></p>
 
 ### Broken Gadgets Research and Development LLC — President and CEO
 *January 2021–Present*
 
-Maintain a consulting and independent R&D company for software engineering,
-firmware development, and systems research.
+Direct an independent software, firmware, and systems engineering R&D lab
+building production edge services, portable C/Rust libraries, scientific Python
+frameworks, and local-first web and desktop tools.
 
-- Built a deterministic Go gameplay CLI and evaluation harness for *Cultist
-  Simulator*, a client-side Go/WebAssembly save-file editor, a local webcam
-  iris-gaze daemon driving Hyprland window focus, and a cross-platform Flutter
-  interactive language-learning app.
-- Extended the Tock OS real-time operating system, built graphical interfaces
-  and Rust hardware drivers for wearable ARM and ESP devices, implemented
-  out-of-band Bluetooth authentication for medical devices, and maintained
-  portable Docker-based Rust cross-compilation toolchains.
+- Built a Go GitHub OAuth2 gateway and HAProxy Lua JWT verifier
+  (`haproxy-github-oauth`) enforcing GitHub Team ACLs across VPN-backed
+  services, a strictly typed Python radiation-telemetry and gamma-spectroscopy
+  framework (`openrad`) with BLE/USB device drivers and SandiaDecay isotope peak
+  matching, and a heap-free portable C99 binary save parser and checksum library
+  (`libpksave`) with Unity and Python test suites.
+- Shipped a cross-platform Flutter multilingual pronunciation trainer
+  (`vocabulars` for Web, Linux, and Android) with a Nix flake toolchain and
+  schema-validated TTS audio pipelines, client-side Go/WebAssembly campaign
+  trackers and browser-only save editors (`everdellduo.tools`,
+  `brotato-masher`, `sleditor`), and a single-source Astro/WeasyPrint/Pandoc
+  multi-format document pipeline (`starsheet`).
+- Engineered a deterministic Go gameplay CLI and evaluation harness for
+  *Cultist Simulator*, a local webcam iris-gaze daemon driving Hyprland window
+  focus, an algorithmic voice-leading multi-track MIDI/MusicXML/Guitar Pro tab
+  converter (`TabConverter`), and a modular virtual controller input bridge
+  (`chatPlays`).
+- Developed a multi-target `no_std` Rust USB HID arcade controller workspace
+  (`MumenController`, `#![forbid(unsafe_code)]` core across Teensy 4.0
+  Cortex-M7 RTIC v2 and ATmega32U4 AVR targets) with a custom KiCad PCB, an
+  ESP32 async HTMX web LED controller with Dockerized CI, Tock OS kernel
+  extensions, and Rust drivers for wearable ARM/ESP devices.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*

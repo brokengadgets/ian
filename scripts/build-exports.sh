@@ -4,7 +4,7 @@
 # a published, full-history option rather than being used as the default.
 set -euo pipefail
 
-SITE_URL="${SITE_URL:-https://brokengadgets.github.io/ian/}"
+SITE_URL="${SITE_URL:-https://brokengadgets.io/ian/}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DIST="$ROOT/dist"
 REF_DOCX="$ROOT/templates/reference.docx"

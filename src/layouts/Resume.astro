@@ -17,6 +17,11 @@ const {
   github,
   linkedin,
 } = frontmatter;
+const githubAccounts = Array.isArray(github)
+  ? github
+  : github
+    ? [github]
+    : [];
 ---
 
 <!doctype html>
@@ -40,7 +45,10 @@ const {
           {phone && <li>{phone}</li>}
           {location && <li>{location}</li>}
           {website && <li><a href={website}>{website.replace(/^https?:\/\//, '')}</a></li>}
-          {github && <li><a href={`https://github.com/${github}`}>github.com/{github}</a></li>}
+          {githubAccounts.map((gh) => {
+            const clean = gh.replace(/^(https?:\/\/)?(www\.)?github\.com\//, '').replace(/\/$/, '');
+            return <li><a href={`https://github.com/${clean}`}>github.com/{clean}</a></li>;
+          })}
           {linkedin && <li><a href={`https://linkedin.com/in/${linkedin}`}>linkedin.com/in/{linkedin}</a></li>}
         </ul>
       </header>
