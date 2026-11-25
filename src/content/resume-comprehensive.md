@@ -10,22 +10,12 @@ github:
   - "github.com/brokengadgets"
 linkedin: ""
 summary: >
-  Staff-caliber security and platform engineer who architects and operates
-  high-trust cloud services, cross-platform endpoint-security tooling,
-  developer-identity systems, and deterministic AI-assisted engineering
-  workflows across a global enterprise estate. Known for turning complex,
-  high-toil operational processes into tested, least-privilege production
-  systems in Go, Rust, and Python.
+  Cybersecurity and platform engineer specializing in cloud security
+  architecture, cross-platform endpoint protection (Linux, Windows, macOS),
+  developer-identity tooling, and deterministic AI-agent security, grounded in a
+  decade of vulnerability research, reverse engineering, and embedded systems
+  engineering.
 ---
-
-## Summary
-
-Security and platform engineer specializing in cloud security architecture,
-endpoint-protection engineering (Linux, Windows, macOS), developer tooling, and
-deterministic AI-agent security. Track record of shipping production services,
-multi-tenant CLIs, and infrastructure-as-code across 1,500+ tracked engineering
-deliverables and 35+ internal tools and services, with a rigorous focus on
-deny-by-default authorization, secret isolation, and repeatable validation.
 
 ## Technical Focus
 
@@ -63,7 +53,7 @@ Nmap, Splunk, and Azure DevOps.
 - Completed the final phase of the enterprise migration to CrowdStrike Falcon,
   operated the Falcon stack across Linux, Windows, and macOS for multiple years,
   and then executed a rapid fleet migration to Microsoft Defender for Endpoint
-  (MDE) and maintained it in production—building a statically linked Rust Linux
+  (MDE) and maintained it in production, building a statically linked Rust Linux
   onboarding installer (`x86_64`/`aarch64` MUSL) and fleet-config pipeline, a
   KVM/libvirt dynamic-analysis lab for studying EDR sensor internals, a Windows
   ETW/ETL trace analyzer attributing scan overhead to root processes, and a
@@ -88,7 +78,7 @@ Nmap, Splunk, and Azure DevOps.
   Platform-as-Code consolidation unifying Defender-as-Code (Microsoft
   Graph/Intune) and Sentinel/Cribl logging pipelines under federated identity
   and staged promotion guardrails.
-- Drove incident response, blameless postmortems, and fleet support baselines—
+- Drove incident response, blameless postmortems, and fleet support baselines,
   executing cloud control-plane purges for exposed AI credentials, recovering
   multi-board automation outages, and turning recurring architecture reviews
   into explainable risk-scoring engines.
@@ -118,7 +108,7 @@ declarative self-hosted infrastructure.
   (`postinabox`).
 - Built `openrad`, a strictly typed Python framework and CLI for radiation
   detection hardware, gamma-spectrum analysis, and geotagged time-series
-  telemetry—supporting Bluetooth LE and USB streaming from RadiaCode RC-10x and
+  telemetry, supporting Bluetooth LE and USB streaming from RadiaCode RC-10x and
   GammaGuard CT007-N detectors, ORTEC/IAEA `.spe` and Theremino MCA histogram
   parsing, SandiaDecay isotope peak matching, GPX track logging, and headless
   spectrum/spectrogram rendering across a Linux/macOS/Windows CI matrix.
@@ -264,7 +254,7 @@ declarative self-hosted infrastructure.
 - Conceived and built a polyglot source-security inspector that detects
   hazardous code patterns and antipatterns across Go, Python,
   TypeScript/JavaScript, PowerShell, Terraform, and AI-agent configuration
-  surfaces—authoring vulnerability corpora, agent-file validators, PowerShell
+  surfaces, authoring vulnerability corpora, agent-file validators, PowerShell
   canonical-path symlink hardening, and EDR-safe release packaging.
 - Contributed repository-grounded tutoring and assessment workflows and
   cross-platform WSL/PowerShell installer fixes to a deterministic Analyze →

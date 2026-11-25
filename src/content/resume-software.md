@@ -10,10 +10,10 @@ github:
   - "github.com/brokengadgets"
 linkedin: ""
 summary: >
-  Staff-caliber security and platform software engineer who architects and
-  ships high-reliability cloud gateways, multi-tenant CLIs, developer tooling,
-  and deterministic automation in Go, Rust, and Python. Focused on explicit
-  failure boundaries, zero-plaintext credential models, and repeatable delivery.
+  Security and platform software engineer architecting high-reliability cloud
+  gateways, multi-tenant CLIs, developer tooling, and deterministic automation
+  in Go, Rust, and Python, grounded in vulnerability research, reverse
+  engineering, and embedded systems development.
 ---
 
 ## Technical Focus
@@ -38,8 +38,8 @@ workloads, observability, artifact management, and event-driven systems.
 - Transformed a collection of internal security projects into a cohesive
   multi-service platform spanning authentication, deny-by-default authorization,
   secret isolation, issue tracking, observability, risk evaluation, and AI
-  inference—shipping reusable Go handler templates, JWT re-verification, and
-  RFC 7807 structured error contracts.
+  inference, shipping reusable Go handler templates, JWT re-verification, and
+  RFC 7807 error contracts that accelerated new service delivery across teams.
 - Eliminated plaintext token storage and repetitive ticket toil across
   enterprise tenants by engineering multi-tenant Jira and Azure DevOps CLIs with
   1Password-backed credential isolation, background auth agents,
@@ -51,7 +51,8 @@ workloads, observability, artifact management, and event-driven systems.
 - Removed developer identity friction and manual fleet diagnostics by authoring
   a Go Git SSH and commit-signing identity router, a GitHub EMU repository
   migrator, a statically linked Rust Linux endpoint onboarding installer
-  (`x86_64`/`aarch64` MUSL), and a Windows ETW/ETL scan trace reader.
+  (`x86_64`/`aarch64` MUSL), and a Windows ETW/ETL scan trace reader, preventing
+  cross-tenant commit leakage and speeding endpoint performance triage.
 - Cut serverless latency and deployment risk by rewriting a legacy cloud
   bucket-proxy function in Go and hardening CI/CD pipelines with
   multi-architecture release matrices, merge-blocking integration suites, and
@@ -69,14 +70,15 @@ workloads, observability, artifact management, and event-driven systems.
   by isolating and fixing root-cause package-dependency, weak-randomness,
   permission, and runtime defects.
 - Replaced manual firewall and architecture reviews with explainable,
-  audit-ready automation—evolving a prototype into a production Go/Python
+  audit-ready automation by evolving a prototype into a production Go/Python
   risk-evaluation service with automated request enrichment, deterministic
   scoring, soak testing, and reason-code telemetry, and hardening JSON decoding
   and Jira error handling in an event-driven ticket dispatcher.
 - Completed the enterprise rollout to CrowdStrike Falcon, operated the stack for
   multiple years, and executed a rapid fleet migration to Microsoft Defender
-  (MDE)—building a multi-tenant exclusions CLI with merge-blocking integration
-  tests and an OpenTofu/KVM/libvirt sensor analysis lab.
+  (MDE), building a multi-tenant exclusions CLI with merge-blocking integration
+  tests and an OpenTofu/KVM/libvirt sensor analysis lab to validate policy changes
+  before production rollout.
 
 <p class="continued-heading">Professional Experience <em>(continued)</em></p>
 
@@ -92,13 +94,15 @@ frameworks, and local-first web and desktop tools.
   services, a strictly typed Python radiation-telemetry and gamma-spectroscopy
   framework (`openrad`) with BLE/USB device drivers and SandiaDecay isotope peak
   matching, and a heap-free portable C99 binary save parser and checksum library
-  (`libpksave`) with Unity and Python test suites.
+  (`libpksave`) with Unity and Python test suites, shipping production edge and
+  scientific libraries with deterministic test coverage.
 - Shipped a cross-platform Flutter multilingual pronunciation trainer
   (`vocabulars` for Web, Linux, and Android) with a Nix flake toolchain and
   schema-validated TTS audio pipelines, client-side Go/WebAssembly campaign
   trackers and browser-only save editors (`everdellduo.tools`,
   `brotato-masher`, `sleditor`), and a single-source Astro/WeasyPrint/Pandoc
-  multi-format document pipeline (`starsheet`).
+  multi-format document pipeline (`starsheet`), delivering zero-backend web and
+  mobile apps with automated asset and export pipelines.
 - Engineered a deterministic Go gameplay CLI and evaluation harness for
   *Cultist Simulator*, a local webcam iris-gaze daemon driving Hyprland window
   focus, an algorithmic voice-leading multi-track MIDI/MusicXML/Guitar Pro tab
@@ -108,35 +112,41 @@ frameworks, and local-first web and desktop tools.
   (`MumenController`, `#![forbid(unsafe_code)]` core across Teensy 4.0
   Cortex-M7 RTIC v2 and ATmega32U4 AVR targets) with a custom KiCad PCB, an
   ESP32 async HTMX web LED controller with Dockerized CI, Tock OS kernel
-  extensions, and Rust drivers for wearable ARM/ESP devices.
+  extensions, and Rust drivers for wearable ARM/ESP devices, enforcing compile-time
+  memory safety across bare-metal targets.
 
 ### Nebraska Applied Research Institute, University of Nebraska at Omaha — Cyber Engineer / Technical Project Designer
 *October 2018–December 2020*
 
 - Led security researchers delivering three DARPA SLCS research papers with
-  accompanying technology demonstrations.
+  accompanying technology demonstrations, securing sponsor milestones and
+  follow-on research opportunities.
 - Built cross-platform Docker development environments and maintained Azure
-  DevOps CI/CD build and test pipelines.
+  DevOps CI/CD build and test pipelines, standardizing reproducible builds across
+  research teams.
 - Deployed source- and binary-based coverage-guided fuzzers, reverse-engineered
   FreeRTOS, Zephyr, Tock, and Nordic SoftDevice deployments, and performed
-  static and dynamic analysis of proprietary ARM firmware.
+  static and dynamic analysis of proprietary ARM firmware, uncovering and
+  mitigating pre-deployment embedded defects.
 - Supplied live attack traffic for web-application attack-detection machine
   learning models and developed embedded-system techniques for hospital ICS and
-  power-grid purple-team exercises.
+  power-grid purple-team exercises alongside US Cyber Command.
 
 ### Hack All the Things, LLC — Principal Courseware Developer
 *April 2015–October 2019*
 
 - Developed, tested, and taught hands-on workshops covering Linux-kernel
   customization, ARP-poisoning detection, advanced iptables, SQL injection, and
-  BACnet automation-control networks.
+  BACnet automation-control networks, upskilling hundreds of engineers and
+  defenders through repeatable labs.
 
 ### Mindful Behavioral Healthcare — Network Administrator
 *April 2016–June 2018*
 
 - Integrated Linux server stacks, OAuth2 SSO, cloud EMR systems, MySQL, and
   SQLite across a three-building medical campus serving 150+ staff, writing
-  Bash and Python automation scripts.
+  Bash and Python automation scripts that centralized clinician authentication
+  and routine administration.
 
 ## Selected Strengths
 

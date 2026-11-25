@@ -5,19 +5,19 @@
 
 @page {
   size: Letter;
-  margin: 0.48in 0.62in;
+  margin: 0.42in 0.56in;
 
   @bottom-center {
     content: "View live version at https://brokengadgets.io/ian/";
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 9pt;
+    font-size: 8.5pt;
     color: #6b7280;
   }
 
   @bottom-right {
     content: counter(page) " / " counter(pages);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 9pt;
+    font-size: 8.5pt;
     color: #6b7280;
   }
 }
@@ -28,14 +28,14 @@
     --fg-muted: #444444;
     --bg: #ffffff;
     --rule: #cccccc;
-    --accent: #0f766e;
+    --accent: #7b528d;
   }
 
   html, body {
     background: #fff !important;
     color: #111 !important;
-    font-size: 10pt;
-    line-height: 1.29;
+    font-size: 9.4pt;
+    line-height: 1.24;
   }
 
   .resume {
@@ -44,16 +44,17 @@
     padding: 0;
   }
 
-  .resume-header    { padding-bottom: 7pt; margin-bottom: 8pt; }
-  .resume-header h1 { font-size: 18pt; }
-  .role-line        { font-size: 11pt; margin-bottom: 5pt; }
-  .contact          { font-size: 9.2pt; max-width: 32rem; column-gap: 2rem; }
-  .contact li       { margin: 0 0 1.5pt; white-space: nowrap; }
-  .resume-body h2   { font-size: 10.5pt; margin-top: 9pt; margin-bottom: 4pt; }
-  .resume-body h3   { font-size: 10pt; margin-top: 6pt; }
-  .resume-body ul   { margin: 2pt 0 4pt; }
-  .resume-body li   { margin: 1.5pt 0; }
-  .resume-body p    { margin: 2pt 0 4pt; }
+  .resume-header    { padding-bottom: 5pt; margin-bottom: 5pt; }
+  .resume-header h1 { font-size: 17pt; }
+  .role-line        { font-size: 10.5pt; margin-bottom: 4pt; }
+  .contact          { font-size: 8.8pt; max-width: 32rem; column-gap: 2rem; }
+  .contact li       { margin: 0 0 1pt; white-space: nowrap; }
+  .resume-tldr      { font-size: 9.2pt; line-height: 1.22; margin: 0 0 4pt; }
+  .resume-body h2   { font-size: 10pt; margin-top: 6.5pt; margin-bottom: 3pt; }
+  .resume-body h3   { font-size: 9.5pt; margin-top: 5pt; }
+  .resume-body ul   { margin: 1.5pt 0 3pt; }
+  .resume-body li   { margin: 1.2pt 0; }
+  .resume-body p    { margin: 1.5pt 0 3pt; }
 
   /* Don't break headings away from their content. */
   h2, h3 { break-after: avoid; }

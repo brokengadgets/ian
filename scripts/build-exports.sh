@@ -20,11 +20,39 @@ build_exports() {
   combined="$(mktemp --suffix=.md)"
   trap 'rm -f "$combined"' RETURN
 
-  sed \
-    -e "s|https://brokengadgets\\.github\\.io/ian/|$SITE_URL|g" \
-    -e "s|brokengadgets\\.github\\.io/ian|${SITE_URL#https://}|g" \
-    -e 's|<p class="continued-heading">\(.*\) <em>(continued)</em></p>|`<w:p><w:r><w:br w:type="page"/></w:r></w:p>`{=openxml}`\\page `{=rtf}\n\n**\1** *(continued)*|g' \
-    "$src_md" > "$combined"
+  python3 - "$src_md" "$SITE_URL" > "$combined" <<'PY'
+import re
+import sys
+from pathlib import Path
+
+src_path = Path(sys.argv[1])
+site_url = sys.argv[2]
+site_host = re.sub(r"^https?://", "", site_url)
+
+text = src_path.read_text(encoding="utf-8")
+summary = ""
+m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, flags=re.S)
+if m:
+    fm, body = m.group(1), m.group(2)
+    sm = re.search(r"^summary:\s*>\n((?:  .*\n?)+)", fm, flags=re.M)
+    if sm:
+        summary = " ".join(line.strip() for line in sm.group(1).splitlines() if line.strip())
+    else:
+        sm_inline = re.search(r'^summary:\s*["\']?(.*?)["\']?\s*$', fm, flags=re.M)
+        if sm_inline:
+            summary = sm_inline.group(1).strip()
+    if summary:
+        text = f"---\n{fm}\n---\n\n{summary}\n\n{body.lstrip()}"
+
+text = text.replace("https://brokengadgets.github.io/ian/", site_url)
+text = text.replace("brokengadgets.github.io/ian", site_host)
+text = re.sub(
+    r'<p class="continued-heading">(.*?) <em>\(continued\)</em></p>',
+    r'`<w:p><w:r><w:br w:type="page"/></w:r></w:p>`{=openxml}`\\page `{=rtf}\n\n**\1** *(continued)*',
+    text,
+)
+sys.stdout.write(text)
+PY
   cat >> "$combined" <<EOF
 
 ---

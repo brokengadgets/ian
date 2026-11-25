@@ -16,6 +16,7 @@ const {
   website,
   github,
   linkedin,
+  summary,
 } = frontmatter;
 const githubAccounts = Array.isArray(github)
   ? github
@@ -54,6 +55,7 @@ const githubAccounts = Array.isArray(github)
       </header>
 
       <article class="resume-body">
+        {summary && <p class="resume-tldr">{summary.trim()}</p>}
         <slot />
       </article>
     </main>
