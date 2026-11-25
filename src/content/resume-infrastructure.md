@@ -10,10 +10,10 @@ github:
   - "github.com/brokengadgets"
 linkedin: ""
 summary: >
-  Staff-caliber infrastructure and security platform engineer specializing in
-  multi-cloud IaC, federated identity, Security Platform-as-Code consolidation,
-  and cross-platform endpoint fleet operations across Azure, Google Cloud,
-  Linux, Windows, and macOS.
+  Infrastructure and security platform engineer specializing in multi-cloud IaC,
+  federated identity, Security Platform-as-Code consolidation, and
+  cross-platform endpoint fleet operations, grounded in vulnerability research,
+  reverse engineering, and low-level systems engineering.
 ---
 
 ## Technical Focus
@@ -37,7 +37,8 @@ design, automated testing, cross-platform tooling, and systems integration.
 - Standardized cloud service delivery across Azure, Google Cloud, and hybrid
   subsidiary networks by architecting reusable infrastructure-as-code and Go
   service templates with managed identities, 1Password secret isolation, and
-  deny-by-default RBAC.
+  deny-by-default RBAC, giving teams a turnkey, zero-static-secret path to
+  production.
 - Reduced duplicated operational overhead across policy and logging stacks by
   consulting on and building Terraform/Terragrunt prototypes that unify
   Defender-as-Code (MS Graph/Intune) and Sentinel/Cribl pipelines under
@@ -46,9 +47,10 @@ design, automated testing, cross-platform tooling, and systems integration.
 - Completed the final phase of the enterprise migration to CrowdStrike Falcon,
   operated Falcon across Linux, Windows, and macOS for multiple years, and then
   executed a rapid fleet-wide migration to Microsoft Defender for Endpoint
-  (MDE)—building a statically linked Rust Linux onboarding installer
-  (`x86_64`/`aarch64` MUSL), an OpenTofu/KVM/libvirt EDR lab, an ETW/ETL
-  process-attribution trace analyzer, and a multi-tenant exclusions CLI.
+  (MDE), building a statically linked Rust Linux installer (`x86_64`/`aarch64`
+  MUSL), an OpenTofu/KVM/libvirt EDR lab, an ETW/ETL process-attribution trace
+  analyzer, and a multi-tenant exclusions CLI to keep global hosts protected
+  without degrading studio workloads.
 - Repeatedly unblocked stalled enterprise security rollouts, configuration
   management pipelines, and cross-unit deployments across heterogeneous fleets
   by isolating and fixing root-cause package-dependency, sensor/kernel,
@@ -56,11 +58,12 @@ design, automated testing, cross-platform tooling, and systems integration.
 - Eliminated developer credential sprawl and accelerated incident recovery by
   building a Go multi-org Git SSH and commit-signing identity router, a GitHub
   EMU repository migrator, 1Password-backed Jira/Azure DevOps CLIs, and cloud
-  control-plane remediation workflows for exposed credentials.
+  control-plane remediation workflows that contained exposed credentials with
+  zero customer impact.
 - Decoupled generalized cloud platform transport from legacy on-premises
   infrastructure without weakening access boundaries by designing a Google Cloud
   bridge with least-privilege IAM, artifact controls, and secure SaaS-to-internal
-  event tunneling.
+  event tunneling, unblocking cross-boundary service integrations.
 - Enabled governed internal LLM adoption and cut serverless runtime latency and
   toil by rolling out an identity-aware AI-inference gateway and rewriting a
   legacy cloud bucket-proxy function in Go.
@@ -73,9 +76,9 @@ design, automated testing, cross-platform tooling, and systems integration.
   pipeline with durable request ledgers, confirmed-ticket-before-work gating,
   bounded uncertain-write reconciliation, and full IaC deployment.
 - Replaced manual firewall and architecture reviews with explainable,
-  repeatable automation—shipping a deterministic risk-evaluation service with
+  repeatable automation by shipping a deterministic risk-evaluation service with
   soak testing and reason-code telemetry, and authoring a cross-platform
-  architecture and SRE readiness advisor.
+  architecture and SRE readiness advisor that cut multi-day review queues.
 
 <p class="continued-heading">Professional Experience <em>(continued)</em></p>
 
@@ -91,16 +94,19 @@ microVM tooling, and reproducible build pipelines.
   isolation, automated WAN failover, Prometheus/Loki/Grafana observability), and
   a Terraform-provisioned Go GitHub OAuth2 and HAProxy Lua JWT access gateway
   (`haproxy-github-oauth`) fronting OpenVPN-hosted Docker services with
-  automated Mail-in-a-Box TLS certificate sync and TCP MSS/MTU clamping tools.
+  Mail-in-a-Box TLS cert sync, eliminating manual firewall drift and per-service
+  auth maintenance.
 - Built Firecracker microVM provisioning utilities (`firecracker-helpers`) that
   convert Dockerfiles into SSH-ready `.ext4` root filesystems and bridge tap
   interfaces on NixOS, alongside Nix flake devshells, Dockerized ESP32 and Rust
-  cross-compilation toolchains, and SHA-pinned, `zizmor`-audited GitHub Actions.
+  cross-compilation toolchains, and SHA-pinned, `zizmor`-audited GitHub Actions,
+  enabling fast, isolated build and test environments.
 - Deployed a containerized AMD ROCm local LLM inference stack (`llama.cpp` with
   flash attention and Q8 KV cache behind an Anthropic-compatible LiteLLM proxy),
   customizable Mail-in-a-Box server hooks (`postinabox`), and single-source
   Astro/WeasyPrint/Pandoc and Hugo static-site pipelines (`starsheet`,
-  `bgr-hugo`).
+  `bgr-hugo`), running private inference and publishing stacks with zero cloud
+  lock-in.
 - Built a strictly typed Python radiation-telemetry and gamma-spectroscopy
   framework (`openrad`) with Linux/macOS/Windows CI matrices, an ESP32
   SoftAP/HTMX web LED controller, `no_std` Rust USB HID firmware on custom
@@ -110,21 +116,25 @@ microVM tooling, and reproducible build pipelines.
 *October 2018–December 2020*
 
 - Led security researchers delivering three DARPA SLCS research papers and
-  accompanying technology demonstrations.
+  accompanying technology demonstrations, securing sponsor milestones and
+  follow-on federal research opportunities.
 - Developed cross-platform Docker build environments and maintained Azure DevOps
-  CI/CD build and test pipelines.
+  CI/CD build and test pipelines, standardizing reproducible delivery across
+  research teams.
 - Provided security guidance for cloud-based emulation technologies and supported
-  emerging standards work for hospital control systems.
+  emerging standards work for hospital control systems, informing healthcare
+  infrastructure defense guidance.
 - Developed techniques for live purple-team and red-team exercises involving
   hospital ICS and power-grid targets alongside US Cyber Command and utility
-  partners.
+  partners, validating critical-infrastructure defenses under realistic attack.
 
 ### Hack All the Things, LLC — Principal Courseware Developer
 *April 2015–October 2019*
 
 - Developed and taught hands-on workshops for professional and DoD audiences
   covering Linux-kernel customization, ARP-poisoning detection, advanced
-  iptables networking, and BACnet ICS red teaming and incident response.
+  iptables networking, and BACnet ICS red teaming and incident response,
+  upskilling hundreds of practitioners through repeatable lab environments.
 
 ### Mindful Behavioral Healthcare — Network Administrator
 *April 2016–June 2018*
@@ -132,7 +142,8 @@ microVM tooling, and reproducible build pipelines.
 - Operated a three-building medical-campus network serving 150+ staff across
   Linux, Windows, macOS, and mobile endpoints; integrated OAuth2 SSO, cloud EMR
   systems, and MySQL/SQLite, wrote Bash/Python automation scripts, and hardened
-  internal and edge firewalls.
+  internal and edge firewalls, centralizing clinician access and sustaining
+  HIPAA compliance.
 
 ## Selected Strengths
 
